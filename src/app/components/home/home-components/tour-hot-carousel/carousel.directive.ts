@@ -4,7 +4,6 @@ import { Directive, ElementRef } from '@angular/core';
   selector: '[appCarousel]',
 })
 export class CarouselDirective {
-  constructor(private el: ElementRef) {}
   ngOnInit(): void {
     let slide: number = 4;
     let items = document.querySelectorAll('.carousel .carousel-item');
