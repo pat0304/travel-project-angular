@@ -1,0 +1,128 @@
+<footer class="border-top p-5" style="height: 300px">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="assets/img/logo.png" alt="" srcset="" />
+      </div>
+      <ul class="col list-unstyled">
+        <li class="mb-4"><strong>Về tourVn</strong></li>
+        <li><a href="#" class="text-dark">Về chúng tôi </a></li>
+        <li><a href="#" class="text-dark">tourVN blog </a></li>
+        <li><a href="#" class="text-dark">Cơ hội việc làm </a></li>
+        <li><a href="#" class="text-dark">Điểm thưởng</a></li>
+      </ul>
+      <ul class="col list-unstyled">
+        <li class="mb-4"><strong>Đối tác</strong></li>
+        <li><a href="#" class="text-dark">Đăng ký nhà cung cấp</a></li>
+        <li><a href="#" class="text-dark">Đối tác đăng nhập</a></li>
+        <li><a href="#" class="text-dark">Đối tác liên kết</a></li>
+        <li>
+          <a href="#" class="text-dark">Chương trình cho người nổi tiếng</a>
+        </li>
+        <li><a href="#" class="text-dark">Chương trình cho đại lý</a></li>
+        <li><a href="#" class="text-dark">Hợp tác Marketing & phân phối</a></li>
+      </ul>
+      <ul class="col list-unstyled">
+        <li class="mb-4"><strong>Điều khoản</strong></li>
+        <li><a href="#" class="text-dark">Điều khoản sử dụng</a></li>
+        <li><a href="#" class="text-dark">Chính sách bảo mật</a></li>
+        <li><a href="#" class="text-dark">Chính sách Cookie</a></li>
+        <li>
+          <a href="#" class="text-dark"
+            >Chương trình thưởng phát hiện lỗi phần mềm</a
+          >
+        </li>
+        <li><a href="#" class="text-dark">Chính sách và quy định</a></li>
+        <li>
+          <a href="#" class="text-dark">Chính sách phúc lợi cho động vật</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div
+  class="modal fade"
+  id="login"
+  aria-hidden="true"
+  aria-labelledby="loginLabel"
+  tabindex="-1"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginLabel">Đăng nhập</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="input-group mb-3">
+          <span
+            class="input-group-text bi bi-person-fill"
+            id="basic-addon1"
+          ></span>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text bi bi-key-fill" id="password"></span>
+          <input
+            type="password"
+            class="form-control"
+            id="password-input"
+            placeholder="Password"
+            aria-label="Password"
+            aria-describedby="password"
+          />
+          <button
+            class="btn btn-outline-secondary input-group-btn bi bi-eye-fill"
+            type="button"
+            id="button-addon-1"
+          ></button>
+        </div>
+        <script>
+          const btnPassword = document.getElementById("button-addon-1");
+          let inputPassword = document.getElementById("password-input");
+          btnPassword.addEventListener("click", function (e) {
+            let btn = e.target;
+            if (inputPassword.getAttribute("type") === "password") {
+              btn.classList.remove("bi-eye-fill");
+              btn.classList.add("bi-eye-slash-fill");
+              inputPassword.setAttribute("type", "text");
+            } else {
+              inputPassword.setAttribute("type", "password");
+              btn.classList.remove("bi-eye-slash-fill");
+              btn.classList.add("bi-eye-fill");
+            }
+          });
+        </script>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="gridCheck1" />
+          <label class="form-check-label" for="gridCheck1">
+            Nhớ đăng nhập
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div
+          class="d-flex w-100 p-2 justify-content-between align-items-center"
+        >
+          <a href="register.html" class="text-decoration-none">Đăng ký ngay</a>
+
+          <a href="#" class="btn btn-primary">Đăng nhập</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

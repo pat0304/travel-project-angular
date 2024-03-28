@@ -3,10 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { TopBannerComponent } from './components/home/home-components/top-banner/top-banner.component';
+import { TourHotCarouselComponent } from './components/home/home-components/tour-hot-carousel/tour-hot-carousel.component';
+import { TopTourTabsComponent } from './components/home/home-components/top-tour-tabs/top-tour-tabs.component';
+import { FormContactComponent } from './components/home/home-components/form-contact/form-contact.component';
+import { BlogComponent } from './components/home/home-components/blog/blog.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    TopBannerComponent,
+    TourHotCarouselComponent,
+    TopTourTabsComponent,
+    FormContactComponent,
+    BlogComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,

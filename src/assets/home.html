@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tourVN</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light position-fixed start-0 end-0 top-0 z-3">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><img src="./img/logo.png" alt="tourVN" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="position-relative" role="search">
+                    <input class="form-control rounded-5 ps-5" type="search" placeholder="Bạn muốn đi đâu..."
+                        aria-label="Search">
+                    <i class="bi bi-search position-absolute fs-5 top-50 start-0 ms-3 translate-middle-y"></i>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 fw-bold gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Du lịch
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products.html">Bắc</a></li>
+                            <li><a class="dropdown-item" href="#">Trung</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Nam</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Tin tức</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="card.html"><i class="bi bi-cart-fill"> Giỏ hàng</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-target="#login" data-bs-toggle="modal"><i
+                                class="bi bi-person-circle"> Tài khoản</i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="container-fluid p-0">
+        <div class="h-100 bg-dark bg-opacity-50 position-relative w-100">
+            <div class="position-absolute translate-middle-y top-50" style="left: 5%;">
+                <h1 class="text-light font-monospace fw-bold">VIỆT NAM TRỌN NIỀM VUI</h1>
+                <h5 class="text-light font-monospace mt-3">Khám phá niềm vui của bạn mọi lúc, mọi nơi - từ chuyến du
+                    lịch ngẫu hứng tới những cuộc phiêu lưu khắp Việt Nam...</h5>
+                <div class="search-header input-group mb-3 w-75 mt-5">
+                    <span class="bi bi-search input-group-text"></span>
+                    <input type="text" class="form-control" placeholder="Bạn muốn đi đâu"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-dark" type="button" id="button-addon2">Tìm kiếm...</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container my-4">
+            <h3 class="mb-3">Chuyến đi hot gần đây</h3>
+            <!-- Slide ưu đãi -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="row">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                        <div class="card m-auto">
+                            <img src="./img/hoian.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cần Thơ</h5>
+                                <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                <a href="#" class="btn btn-primary">Đi ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                        <div class="card m-auto">
+                            <img src="./img/nuixanh.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cần Thơ</h5>
+                                <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                <a href="#" class="btn btn-primary">Đi ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                        <div class="card m-auto">
+                            <img src="./img/hoian.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cần Thơ</h5>
+                                <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                <a href="#" class="btn btn-primary">Đi ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                        <div class="card m-auto">
+                            <img src="./img/cantho.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cần Thơ</h5>
+                                <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                <a href="#" class="btn btn-primary">Đi ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                        <div class="card m-auto">
+                            <img src="./img/hoian.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cần Thơ</h5>
+                                <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                <a href="#" class="btn btn-primary">Đi ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                        <div class="card m-auto">
+                            <img src="./img/nuixanh.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cần Thơ</h5>
+                                <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                <a href="#" class="btn btn-primary">Đi ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+            </div></div>
+            <script>
+                let items = document.querySelectorAll(".carousel .carousel-item");
+                items.forEach((e)=>{
+                    let slide = 4
+                    let next = e.nextElementSibling;
+                    for(let i=0; i<slide; i++){
+                        if(!next){
+                            next = items[0]
+                        }
+                        let cloneChild = next.cloneNode(true)
+                        e.appendChild(cloneChild.children[0])
+                        next = next.nextElementSibling
+                    }
+                })
+            </script>
+            <a href="#" class="btn btn-outline-dark mt-3 position-relative translate-middle-x start-50">Xem thêm</a>
+        </div>
+
+        <div class="container">
+            <h3>Lựa chọn nhiều nhất các miền</h3>
+            <ul class="nav nav-pills my-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-bac-tab" data-bs-toggle="pill" data-bs-target="#pills-bac"
+                        type="button" role="tab" aria-controls="pills-bac" aria-selected="true">Miền Bắc</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-trung-tab" data-bs-toggle="pill" data-bs-target="#pills-trung"
+                        type="button" role="tab" aria-controls="pills-trung" aria-selected="false">Miền Trung</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-nam-tab" data-bs-toggle="pill" data-bs-target="#pills-nam"
+                        type="button" role="tab" aria-controls="pills-nam" aria-selected="false">Miền Nam</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-bac" role="tabpanel" aria-labelledby="pills-bac-tab"
+                    tabindex="0">
+                    <div class="row m-auto">
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-danger m-2">Top 1</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-warning m-2">Top 2</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-success m-2">Top 3</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-trung" role="tabpanel" aria-labelledby="pills-trung-tab"
+                    tabindex="0">
+                    <div class="row m-auto">
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-danger m-2">Top 1</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-warning m-2">Top 2</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-success m-2">Top 3</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-nam" role="tabpanel" aria-labelledby="pills-nam-tab" tabindex="0">
+                    <div class="row m-auto">
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-danger m-2">Top 1</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-warning m-2">Top 2</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card m-auto w-100 mb-3">
+                                <span class="badge rounded-pill  position-absolute bg-success m-2">Top 3</span>
+                                <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cần Thơ</h5>
+                                    <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+                                    <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+                                    <a href="#" class="btn btn-primary">Đi ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-5 p-0" id="form-contact" style="height: 500px;">
+            <div class="bg-dark bg-opacity-50 w-100 h-100">
+                <div class="row row w-75 h-100 m-auto">
+                    <div class="col-sm-4 col-lg-6">
+                        <div class="position-relative top-50 translate-middle-y w-100 align-middle">
+                            <strong class="text-light fs-2 m-auto text-uppercase"
+                                style="text-shadow: 0 0 5px black;">Nhập thông tin vào đây nếu bạn cần chúng tôi tư
+                                vấn</strong>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-lg-6">
+                        <div class="card w-100 shadow position-relative top-50 translate-middle-y p-4">
+                            <div class="card-body ">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Họ và tên</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Email</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="tel" class="form-control" id="floatingInput"
+                                        placeholder="name@example.com">
+                                    <label for="floatingInput">Số điện thoại </label>
+                                </div>
+
+                                <button class="btn btn-danger btn-lg float-end px-5 shadow">Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog" class="container">
+            <div class="row p-5 m-auto">
+                <div class="col-md-4 mb-4">
+                    <a class="py-4" href="#">
+                        <div class="card w-100 text-center text-dark" style="height: 430px">
+                            <img src="https://res.klook.com/image/upload/v1640179720/veeon5jzqyjccj5m3lkg.webp"
+                                class="card-img-top w-75" alt="...">
+                            <div class="card-body py-5">
+                                <h5 class="card-title text-dark">Xem Blog của tourVN</h5>
+                                <p class="card-text text-dark" style="font-size: 12px">tourVN gợi ý cho bạn các xu hướng
+                                    du lịch, lịch trình chi tiết và mẹo thú vị</p>
+                                <a href="#" class="btn btn-outline-dark">Xem ngay</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="py-4" href="#">
+                        <div class="card w-100 text-center text-dark" style="height: 430px">
+                            <img src="https://res.klook.com/image/upload/v1640179766/arto4pac628jzdsuu3df.webp"
+                                class="card-img-top w-75" alt="...">
+                            <div class="card-body py-5">
+                                <h5 class="card-title text-dark">Tiết kiệm hơn với Credit</h5>
+                                <p class="card-text text-dark" style="font-size: 12px">Tìm hiểu cách đặt hoạt động với
+                                    giá siêu tiết kiệm bằng cách để lại đánh giá</p>
+                                <a href="#" class="btn btn-outline-dark">Xem ngay</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a class="py-4" href="#">
+                        <div class="card w-100 text-center text-dark" style="height: 430px">
+                            <img src="https://res.klook.com/image/upload/v1640179875/ggxmmubhiq9nxkbobcro.webp"
+                                class="card-img-top w-75" alt="...">
+                            <div class="card-body py-5">
+                                <h5 class="card-title text-dark">Nhận ưu đãi khi mời bạn bè</h5>
+                                <p class="card-text text-dark" style="font-size: 12px">Sau khi bạn của bạn đăng ký và
+                                    hoàn thành đơn hàng đầu tiên, bạn sẽ nhận ₫100,000 điểm thưởng</p>
+                                <a href="#" class="btn btn-outline-dark">Xem ngay</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="border-top p-5" style="height: 300px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./img/logo.png" alt="" srcset="">
+                </div>
+                <ul class="col list-unstyled">
+                    <li class="mb-4"><strong>Về tourVn</strong></li>
+                    <li><a href="#" class="text-dark">Về chúng tôi </a></li>
+                    <li><a href="#" class="text-dark">tourVN blog </a></li>
+                    <li><a href="#" class="text-dark">Cơ hội việc làm </a></li>
+                    <li><a href="#" class="text-dark">Điểm thưởng</a></li>
+                </ul>
+                <ul class="col list-unstyled">
+                    <li class="mb-4"><strong>Đối tác</strong></li>
+                    <li><a href="#" class="text-dark">Đăng ký nhà cung cấp</a></li>
+                    <li><a href="#" class="text-dark">Đối tác đăng nhập</a></li>
+                    <li><a href="#" class="text-dark">Đối tác liên kết</a></li>
+                    <li><a href="#" class="text-dark">Chương trình cho người nổi tiếng</a></li>
+                    <li><a href="#" class="text-dark">Chương trình cho đại lý</a></li>
+                    <li><a href="#" class="text-dark">Hợp tác Marketing & phân phối</a></li>
+                </ul>
+                <ul class="col list-unstyled">
+                    <li class="mb-4"><strong>Điều khoản</strong></li>
+                    <li><a href="#" class="text-dark">Điều khoản sử dụng</a></li>
+                    <li><a href="#" class="text-dark">Chính sách bảo mật</a></li>
+                    <li><a href="#" class="text-dark">Chính sách Cookie</a></li>
+                    <li><a href="#" class="text-dark">Chương trình thưởng phát hiện lỗi phần mềm</a></li>
+                    <li><a href="#" class="text-dark">Chính sách và quy định</a></li>
+                    <li><a href="#" class="text-dark">Chính sách phúc lợi cho động vật</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="loginLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginLabel">Đăng nhập</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bi bi-person-fill" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bi bi-key-fill" id="password"></span>
+                        <input type="password" class="form-control" id="password-input" placeholder="Password"
+                            aria-label="Password" aria-describedby="password">
+                        <button class="btn btn-outline-secondary input-group-btn bi bi-eye-fill" type="button"
+                            id="button-addon-1"></button>
+                    </div>
+                    <script>
+                    const btnPassword = document.getElementById("button-addon-1");
+                    let inputPassword = document.getElementById("password-input");
+                    btnPassword.addEventListener("click", function(e) {
+                        let btn = e.target
+                        if (inputPassword.getAttribute("type") === "password") {
+                            btn.classList.remove("bi-eye-fill");
+                            btn.classList.add("bi-eye-slash-fill")
+                            inputPassword.setAttribute("type", "text")
+                        } else {
+                            inputPassword.setAttribute("type", "password")
+                            btn.classList.remove("bi-eye-slash-fill");
+                            btn.classList.add("bi-eye-fill")
+                        }
+                    })
+                    </script>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Nhớ đăng nhập
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex w-100 p-2 justify-content-between align-items-center">
+                        <a href="register.html" class=" text-decoration-none">Đăng ký ngay</a>
+
+                        <a href="#" class="btn btn-primary">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
