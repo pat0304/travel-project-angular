@@ -14,7 +14,7 @@ import { BlogComponent } from './components/home/home-components/blog/blog.compo
 import { ProductComponent } from './components/product/product.component';
 import { DetailedProductComponent } from './components/detailed-product/detailed-product.component';
 import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
-import { CartComponent } from './components/cart/cart.component';
+import { CarouselDirective } from './components/home/home-components/tour-hot-carousel/carousel.directive';
 
 @NgModule({
   declarations: [
@@ -29,8 +29,8 @@ import { CartComponent } from './components/cart/cart.component';
     BlogComponent,
     ProductComponent,
     DetailedProductComponent,
-    CartComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    CarouselDirective
   ],
   imports: [
     BrowserModule,
