@@ -12,6 +12,9 @@ import { TopTourTabsComponent } from './components/home/home-components/top-tour
 import { FormContactComponent } from './components/home/home-components/form-contact/form-contact.component';
 import { BlogComponent } from './components/home/home-components/blog/blog.component';
 import { ProductComponent } from './components/product/product.component';
+import { DetailedProductComponent } from './components/detailed-product/detailed-product.component';
+import { CartComponent } from './cart/cart.component';
+import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { ProductComponent } from './components/product/product.component';
     TopTourTabsComponent,
     FormContactComponent,
     BlogComponent,
-    ProductComponent
+    ProductComponent,
+    DetailedProductComponent,
+    CartComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,
