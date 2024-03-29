@@ -1,0 +1,108 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": [
+        "https://dulichviet.net.vn/wp-content/uploads/2022/12/bau-sen-bau-trang-15.jpg",
+        "https://dulichviet.net.vn/wp-content/uploads/2022/12/Lau_dai_ruou_vang_Mui_Ne.jpg",
+        "https://dulichviet.net.vn/wp-content/uploads/2022/12/thap-ba-posanu.png"
+      ],
+      "name": "TOUR PHAN THIẾT – MŨI NÉ",
+      "price": 840000,
+      "region": "Trung"
+    },
+    {
+      "id": 2,
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/du-lich-sapa-nui-ham-rong-1.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/Du-lich-sapa-ban-cat-cat-1.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/Du-lich-sapa-1.jpg"
+      ],
+      "name": "TOUR SAPA",
+      "price": 1250000,
+      "region": "Bắc"
+    },
+    {
+      "id": 3,
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/Ho%C3%A0ng-su-ph%C3%AC-5.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/ho%C3%A0ng-su-ph%C3%AC-m%C3%B9a-l%C3%BAa-ch%C3%ADn.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/du-l%E1%BB%8Bch-ho%C3%A0ng-su-ph%C3%AC.jpg"
+      ],
+      "name": "Du Lịch Hoàng Su Phì - Simacai - Bắc Hà",
+      "price": 3890000,
+      "region": "Bắc"
+    },
+    {
+      "id": 4,
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/M%E1%BB%99c%20Ch%C3%A2u/Du-lich-m%E1%BB%99c-ch%C3%A2u-6.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/M%E1%BB%99c%20Ch%C3%A2u/C%C3%A2y-%C4%91%C3%A0o-t%C3%B4-hi%E1%BB%87u-s%C6%A1n-la.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90i%E1%BB%87n%20Bi%C3%AAn/du-lich-dien-bien-6.jpg"
+      ],
+      "name": "Du Lịch Hoàng Su Phì - Simacai - Bắc Hà",
+      "price": 3890000,
+      "region": "Bắc"
+    },
+    {
+      "id": 5,
+      "image": [
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-lich-Da-Lat-9.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-lich-Da-Lat-12.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-lich-Da-Lat-10.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-lich-Da-Lat-11.jpg"
+      ],
+      "name": "Du Lịch Đà Lạt - Tour check in",
+      "price": 2590000,
+      "region": "Trung"
+    },
+    {
+      "id": 6,
+      "image": [
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-hue-8.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-hue-9.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-hue-10.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-hue-11.jpg"
+      ],
+      "name": "Tour Du Lịch Huế",
+      "price": 4590000,
+      "region": "Trung"
+    },
+    {
+      "id": 7,
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Mi%E1%BB%81n%20T%C3%A2y/Cho-noi-cai-rang2.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Mi%E1%BB%81n%20T%C3%A2y/Chua-doi.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/M%C5%A9i-c%C3%A0-mau-2.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Mi%E1%BB%81n%20T%C3%A2y/Nh%C3%A0-c%C3%B4ng-t%E1%BB%AD-b%E1%BA%A1c-li%C3%AAu.jpg"
+      ],
+      "name": "Du lịch Miền Tây: Cần Thơ - Sóc Trăng - Cà Mau - Bạc Liêu",
+      "price": 1750000,
+      "region": "Nam"
+    },
+    {
+      "id": 8,
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Ph%C3%BA%20Qu%E1%BB%91c/Du-lich-phu-quoc-bai-sao3.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-phu-quoc-2.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-phu-quoc-1.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-phu-quoc-3.jpg"
+      ],
+      "name": "Du Lịch Phú Quốc",
+      "price": 2099000,
+      "region": "Nam"
+    },
+    {
+      "id": 9,
+      "image": [
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-l%E1%BB%8Bch-v%C5%A9ng-t%C3%A0u-1.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-l%E1%BB%8Bch-v%C5%A9ng-t%C3%A0u-2.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-l%E1%BB%8Bch-v%C5%A9ng-t%C3%A0u-3.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-l%E1%BB%8Bch-v%C5%A9ng-t%C3%A0u-4.jpg"
+      ],
+      "name": "Du Lịch Vũng Tàu",
+      "price": 2390000,
+      "region": "Nam"
+    }
+  ]
+}

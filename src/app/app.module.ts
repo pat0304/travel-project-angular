@@ -10,11 +10,12 @@ import { TopBannerComponent } from './components/home/home-components/top-banner
 import { TourHotCarouselComponent } from './components/home/home-components/tour-hot-carousel/tour-hot-carousel.component';
 import { TopTourTabsComponent } from './components/home/home-components/top-tour-tabs/top-tour-tabs.component';
 import { FormContactComponent } from './components/home/home-components/form-contact/form-contact.component';
-import { BlogComponent } from './components/home/home-components/blog/blog.component';
 import { ProductComponent } from './components/product/product.component';
 import { DetailedProductComponent } from './components/detailed-product/detailed-product.component';
 import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 import { CarouselDirective } from './components/home/home-components/tour-hot-carousel/carousel.directive';
+import { BlogComponent } from './components/blog/blog.component';
+import { HomeBlogComponent } from './components/home/home-components/home-blog/home-blog.component';
 
 @NgModule({
   declarations: [
@@ -30,13 +31,11 @@ import { CarouselDirective } from './components/home/home-components/tour-hot-ca
     ProductComponent,
     DetailedProductComponent,
     BlogDetailComponent,
-    CarouselDirective
+    CarouselDirective,
+    HomeBlogComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
