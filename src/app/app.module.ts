@@ -16,6 +16,7 @@ import { BlogDetailComponent } from './components/blog-detail/blog-detail.compon
 import { CarouselDirective } from './components/home/home-components/tour-hot-carousel/carousel.directive';
 import { BlogComponent } from './components/blog/blog.component';
 import { HomeBlogComponent } from './components/home/home-components/home-blog/home-blog.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { HomeBlogComponent } from './components/home/home-components/home-blog/h
     CarouselDirective,
     HomeBlogComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

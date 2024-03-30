@@ -104,5 +104,25 @@
       "price": 2390000,
       "region": "Nam"
     }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "released-date": "03/04/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-1.jpg",
+      "title": "3 cách giúp bạn du lịch khắp thế giới không tốn một xu",
+      "content": [
+        "<p>Có rất nhiều cách để đi du lịch nước ngoài không tốn một xu mà bạn có thể áp dụng ngay từ bây giờ, thậm chí là bạn còn được… trả tiền cho tất cả các hoạt động của mình. Bạn có sẵn sàng thử không?</p>",
+        "<h2>1. Trở thành một hướng dẫn viên du lịch</h2>",
+        "<img src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-2.jpg\">",
+        "Trở thành hướng dẫn viên du lịch là một trong những cách giúp bạn dễ dàng tiếp cận với những địa điểm du lịch nổi tiếng trong nước và ngoài nước. Nó có thể giúp bạn biết đến và hiểu thêm rất nhiều nền văn hóa khác nhau mà không tốn một đồng nào. Tuy nhiên, công việc này cũng có những hạn chế nhất định. Thứ nhất, nếu bạn là một hướng dẫn viên du lịch tự do bạn có thể thoải mái hơn trong khi làm việc, nhưng điều đó cũng có nghĩa là lương của bạn sẽ không đều và bạn cũng không được đảm bảo là sẽ có công việc thường xuyên. Thứ hai, nếu bạn đủ may mắn để có một công việc ổn định tại một công ty du lịch, thì bạn phải xử lý hết các công việc hậu cần, lên kế hoạch và cố gắng để quản lý tốt nhóm khách du lịch “cáu kỉnh” cho mỗi tuần tại một thời điểm khác nhau.",
+        "<h2>2. Tham gia WWOOF</h2>",
+        "<img src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-3.jpg\">",
+        "<p>WWOOF (www.wwoof.net) là tổ chức phi lợi nhuận liên kết các nông trại hữu cơ của rất nhiều nước trên thế giới. Bạn có thể làm việc tình nguyện ở các trang trại này trong một thời gian, để đổi lấy một chỗ ở và các bữa ăn được nấu tại nhà. WWOOF có thể không phải là một sự lựa chọn công việc hoàn hảo, nhưng nó là một cách tuyệt vời để bạn có thể nhìn ngắm thế giới trong khi vẫn “bảo toàn” được số tiền trong thẻ ngân hàng của mình.",
+        "3. Trở thành giáo viên dạy ngoại ngữ</p>",
+        "<img src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-4-1024x766.jpg\">",
+        "<p>Nếu bạn đang tìm kiếm một cuộc phiêu lưu ở nước ngoài và bạn có trình độ Anh ngữ tốt, hãy thử tham gia công việc giảng dạy tiếng Anh hoặc tiếng Việt ở nước ngoài xem sao. Có rất nhiều những trung tâm dạy ngoại ngữ ở các khu vực châu Á, Trung Đông, châu Mỹ Latinh… có nhu cầu tuyển dụng giáo viên giỏi tiếng Anh và tiếng Việt, và hầu hết các nước đó đều không yêu cầu bạn bắt buộc phải nói được ngôn ngữ bản địa. Nếu bạn có ý định đi du lịch bằng cách này, nhớ trang bị cho mình một số chứng chỉ giảng dạy ngoại ngữ được cấp bởi các Tổ chức quốc tế nhé. Và bạn biết đấy, mức lương cho công việc này không hề thấp một chút nào!</p>"
+      ]
+    }
   ]
 }

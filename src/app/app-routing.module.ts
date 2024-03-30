@@ -5,7 +5,6 @@ import { ProductComponent } from './components/product/product.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { DetailedProductComponent } from './components/detailed-product/detailed-product.component';
 import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
-
 const routes: Routes = [
   {
     path: '',
@@ -16,15 +15,15 @@ const routes: Routes = [
     component: ProductComponent,
   },
   {
-    path: 'blog',
+    path: 'blogs',
     component: BlogComponent,
   },
   {
-    path: 'product/detail',
+    path: 'product/:id',
     component: DetailedProductComponent,
   },
   {
-    path: 'blog/detail',
+    path: 'blog/:id',
     component: BlogDetailComponent,
   },
 ];
