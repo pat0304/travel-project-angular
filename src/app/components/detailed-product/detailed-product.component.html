@@ -10,7 +10,7 @@
             aria-labelledby="pills-bac-tab"
             tabindex="0"
           >
-            <img src="{{ detailedProduct.image[0] }}" class="w-100" alt="" />
+            <img src="{{ detailedProduct[0].image[0] }}" class="w-100" alt="" />
           </div>
           <div
             class="tab-pane fade"
@@ -19,7 +19,7 @@
             aria-labelledby="pills-trung-tab"
             tabindex="0"
           >
-            <img src="{{ detailedProduct.image[1] }}" class="w-100" alt="" />
+            <img src="{{ detailedProduct[0].image[1] }}" class="w-100" alt="" />
           </div>
           <div
             class="tab-pane fade"
@@ -28,7 +28,7 @@
             aria-labelledby="pills-nam-tab"
             tabindex="0"
           >
-            <img src="{{ detailedProduct.image[2] }}" class="w-100" alt="" />
+            <img src="{{ detailedProduct[0].image[2] }}" class="w-100" alt="" />
           </div>
         </div>
         <ul
@@ -48,7 +48,7 @@
               aria-selected="true"
             >
               <img
-                src="{{ detailedProduct.image[0] }}"
+                src="{{ detailedProduct[0].image[0] }}"
                 height="30px"
                 width="30px"
                 alt=""
@@ -67,7 +67,7 @@
               aria-selected="false"
             >
               <img
-                src="{{ detailedProduct.image[1] }}"
+                src="{{ detailedProduct[0].image[1] }}"
                 height="30px"
                 width="30px"
                 alt=""
@@ -86,7 +86,7 @@
               aria-selected="false"
             >
               <img
-                src="{{ detailedProduct.image[2] }}"
+                src="{{ detailedProduct[0].image[2] }}"
                 height="30px"
                 width="30px"
                 alt=""
@@ -97,11 +97,11 @@
       </div>
       <div class="col-lg-5">
         <div class="row mb-5">
-          <h1>{{ detailedProduct.name }}</h1>
+          <h1>{{ detailedProduct[0].name }}</h1>
           <strong
             class="price text-danger"
             style="font-size: 35px; text-shadow: 0 0 1px black"
-            >{{ detailedProduct.price }} VNĐ</strong
+            >{{ detailedProduct[0].price }} VNĐ</strong
           >
         </div>
         <div class="input-group flex-nowrap w-50">

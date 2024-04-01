@@ -1,16 +1,16 @@
 <header
   class="container-fluid p-0"
   style="
-    background: url('./img/nuixanh.jpg');
+    background: url('{{ data[0].image }}');
     background-size: cover;
     background-position: center;
   "
 >
   <div class="h-100 bg-dark bg-opacity-50 position-relative w-100">
     <div class="text-center position-relative top-50 translate-middle-y">
-      <p class="text-secondary">----20/03/2024----</p>
-      <h1 class="text-light font-monospace fw-bold">
-        Khám phá 10 đỉnh núi cao nhất Việt Nam
+      <p class="text-secondary">----{{ data[0].release }}----</p>
+      <h1 class="text-light font-monospace text-wrap w-75 m-auto fw-bold">
+        {{ data[0].title }}
       </h1>
     </div>
   </div>
@@ -19,45 +19,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h6 class="fw-bold">
-          Chinh phục những ngọn núi hùng vĩ là ước mơ, khao khát của biết bao
-          bạn trẻ. Nếu tuổi trẻ của bạn vẫn đong đầy nhiệt huyết và sự liều lĩnh
-          thì hãy cùng tourVN khám phá, chiêm ngưỡng 10 đỉnh núi cao nhất Việt
-          Nam nhé.
-        </h6>
-        <h1>1. Fansipan 3143m (Lào Cai)</h1>
-        <p>
-          Ngọn núi cao nhất Việt Nam, hay còn gọi là nóc nhà Đông Dương. Với độ
-          cao 3143m so với mực nước biển, Fansipan là điểm hẹn của rất nhiều nhà
-          leo núi cả trong và ngoài nước. <br />
-          Nằm cách thị trấn Sapa khoảng 10km, ngọn núi này có nhiều tuyến đường
-          chinh phục nhưng được lựa chọn nhiều nhất vẫn là tuyến Trạm Tôn (2
-          ngày 1 đêm), sau đó là Cát Cát (3 ngày 2 đêm). <br />
-          Đặc biệt hơn, tuy là ngọn núi cao nhất nhưng Fansipan lại là ngọn núi
-          thuộc top dễ về độ khó khi chinh phục. Vì vậy, nếu là người mới bắt
-          đầu trải nghiệm trekking thì các bạn nên lựa chọn đỉnh cao này nhé.
-        </p>
-        <img
-          src="https://viettrekking.vn/wp-content/uploads/2019/05/VNO-fanxipan3-1500x1000.jpg"
-          width="100%"
-          alt=""
-        />
-        <h1>2. Pusilung 3083m (Lai Châu)</h1>
-        <p>
-          Ngọn núi cao thứ hai của Việt Nam, được mệnh danh là nóc nhà của biên
-          giới với độ cao 3083m, thuộc khu vực Mường Tè, Lai Châu. Đây là một
-          trong những ngọn núi mà các bạn sẽ phải dành nhiều thời gian nhất do
-          quãng đường trekking rất dài, có thể nói là dài nhất trong các ngọn
-          núi thuộc top 10. Đỉnh cao này cũng nằm ở biên giới Việt – Trung và
-          đường chinh phục có đi qua cột mốc 42, vì vậy trước khi chinh phục các
-          bạn cần được sự đồng ý của Đồn biên phòng Pa Vệ Sử quản lý biên giới
-          tại nơi đây.
-        </p>
-        <img
-          src="https://viettrekking.vn/wp-content/uploads/2019/05/HA8_1970-1500x1000.jpg"
-          width="100%"
-          alt=""
-        />
+        <div class="" *ngFor="let item of data[0].content">
+          <div class="" [innerHTML]="item"></div>
+        </div>
       </div>
       <div class="col-md-4">
         <h3>Bài viết khác</h3>

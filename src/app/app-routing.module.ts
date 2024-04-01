@@ -11,7 +11,11 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'products',
+    path: 'travels',
+    component: ProductComponent,
+  },
+  {
+    path: 'travels/:region',
     component: ProductComponent,
   },
   {

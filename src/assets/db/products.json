@@ -9,7 +9,7 @@
       ],
       "name": "TOUR PHAN THIẾT – MŨI NÉ",
       "price": 840000,
-      "region": "Trung"
+      "region": "trung"
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       ],
       "name": "TOUR SAPA",
       "price": 1250000,
-      "region": "Bắc"
+      "region": "bac"
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       ],
       "name": "Du Lịch Hoàng Su Phì - Simacai - Bắc Hà",
       "price": 3890000,
-      "region": "Bắc"
+      "region": "bac"
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       ],
       "name": "Du Lịch Hoàng Su Phì - Simacai - Bắc Hà",
       "price": 3890000,
-      "region": "Bắc"
+      "region": "bac"
     },
     {
       "id": 5,
@@ -54,7 +54,7 @@
       ],
       "name": "Du Lịch Đà Lạt - Tour check in",
       "price": 2590000,
-      "region": "Trung"
+      "region": "trung"
     },
     {
       "id": 6,
@@ -66,7 +66,7 @@
       ],
       "name": "Tour Du Lịch Huế",
       "price": 4590000,
-      "region": "Trung"
+      "region": "trung"
     },
     {
       "id": 7,
@@ -78,7 +78,7 @@
       ],
       "name": "Du lịch Miền Tây: Cần Thơ - Sóc Trăng - Cà Mau - Bạc Liêu",
       "price": 1750000,
-      "region": "Nam"
+      "region": "nam"
     },
     {
       "id": 8,
@@ -90,7 +90,7 @@
       ],
       "name": "Du Lịch Phú Quốc",
       "price": 2099000,
-      "region": "Nam"
+      "region": "nam"
     },
     {
       "id": 9,
@@ -102,26 +102,89 @@
       ],
       "name": "Du Lịch Vũng Tàu",
       "price": 2390000,
-      "region": "Nam"
+      "region": "nam"
     }
   ],
   "blogs": [
     {
       "id": 1,
-      "released-date": "03/04/2024",
+      "release": "03/04/2024",
       "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-1.jpg",
       "title": "3 cách giúp bạn du lịch khắp thế giới không tốn một xu",
       "content": [
         "<p>Có rất nhiều cách để đi du lịch nước ngoài không tốn một xu mà bạn có thể áp dụng ngay từ bây giờ, thậm chí là bạn còn được… trả tiền cho tất cả các hoạt động của mình. Bạn có sẵn sàng thử không?</p>",
         "<h2>1. Trở thành một hướng dẫn viên du lịch</h2>",
-        "<img src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-2.jpg\">",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-2.jpg\">",
         "Trở thành hướng dẫn viên du lịch là một trong những cách giúp bạn dễ dàng tiếp cận với những địa điểm du lịch nổi tiếng trong nước và ngoài nước. Nó có thể giúp bạn biết đến và hiểu thêm rất nhiều nền văn hóa khác nhau mà không tốn một đồng nào. Tuy nhiên, công việc này cũng có những hạn chế nhất định. Thứ nhất, nếu bạn là một hướng dẫn viên du lịch tự do bạn có thể thoải mái hơn trong khi làm việc, nhưng điều đó cũng có nghĩa là lương của bạn sẽ không đều và bạn cũng không được đảm bảo là sẽ có công việc thường xuyên. Thứ hai, nếu bạn đủ may mắn để có một công việc ổn định tại một công ty du lịch, thì bạn phải xử lý hết các công việc hậu cần, lên kế hoạch và cố gắng để quản lý tốt nhóm khách du lịch “cáu kỉnh” cho mỗi tuần tại một thời điểm khác nhau.",
         "<h2>2. Tham gia WWOOF</h2>",
-        "<img src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-3.jpg\">",
-        "<p>WWOOF (www.wwoof.net) là tổ chức phi lợi nhuận liên kết các nông trại hữu cơ của rất nhiều nước trên thế giới. Bạn có thể làm việc tình nguyện ở các trang trại này trong một thời gian, để đổi lấy một chỗ ở và các bữa ăn được nấu tại nhà. WWOOF có thể không phải là một sự lựa chọn công việc hoàn hảo, nhưng nó là một cách tuyệt vời để bạn có thể nhìn ngắm thế giới trong khi vẫn “bảo toàn” được số tiền trong thẻ ngân hàng của mình.",
-        "3. Trở thành giáo viên dạy ngoại ngữ</p>",
-        "<img src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-4-1024x766.jpg\">",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-3.jpg\">",
+        "<p>WWOOF (www.wwoof.net) là tổ chức phi lợi nhuận liên kết các nông trại hữu cơ của rất nhiều nước trên thế giới. Bạn có thể làm việc tình nguyện ở các trang trại này trong một thời gian, để đổi lấy một chỗ ở và các bữa ăn được nấu tại nhà. WWOOF có thể không phải là một sự lựa chọn công việc hoàn hảo, nhưng nó là một cách tuyệt vời để bạn có thể nhìn ngắm thế giới trong khi vẫn “bảo toàn” được số tiền trong thẻ ngân hàng của mình.</p>",
+        "<h2>3. Trở thành giáo viên dạy ngoại ngữ</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-4-1024x766.jpg\">",
         "<p>Nếu bạn đang tìm kiếm một cuộc phiêu lưu ở nước ngoài và bạn có trình độ Anh ngữ tốt, hãy thử tham gia công việc giảng dạy tiếng Anh hoặc tiếng Việt ở nước ngoài xem sao. Có rất nhiều những trung tâm dạy ngoại ngữ ở các khu vực châu Á, Trung Đông, châu Mỹ Latinh… có nhu cầu tuyển dụng giáo viên giỏi tiếng Anh và tiếng Việt, và hầu hết các nước đó đều không yêu cầu bạn bắt buộc phải nói được ngôn ngữ bản địa. Nếu bạn có ý định đi du lịch bằng cách này, nhớ trang bị cho mình một số chứng chỉ giảng dạy ngoại ngữ được cấp bởi các Tổ chức quốc tế nhé. Và bạn biết đấy, mức lương cho công việc này không hề thấp một chút nào!</p>"
+      ]
+    },
+    {
+      "id": 2,
+      "release": "05/06/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-2.jpg",
+      "title": "10 điểm đến tuyệt vời dành cho những người muốn du lịch không tốn kém",
+      "content": [
+        "<p>Những điểm đến này không chỉ đẹp mắt mà còn không tốn kém. Hãy khám phá và trải nghiệm!</p>",
+        "<h2>1. Bali, Indonesia</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-5.jpg\">",
+        "<p>Đảo Bali là một điểm đến nổi tiếng với các bãi biển đẹp và văn hóa độc đáo của Indonesia.</p>",
+        "<h2>2. Chiang Mai, Thái Lan</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-6.jpg\">",
+        "<p>Thành phố Chiang Mai tại Thái Lan nổi tiếng với văn hóa và ẩm thực đặc sắc.</p>",
+        "<h2>3. Machu Picchu, Peru</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-7.jpg\">",
+        "<p>Thành phố cổ Machu Picchu ở Peru là một trong những kỳ quan thế giới đáng thăm nhất.</p>"
+      ]
+    },
+    {
+      "id": 3,
+      "release": "07/08/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-3.jpg",
+      "title": "Khám phá những điều tuyệt vời với trải nghiệm WWOOF",
+      "content": [
+        "<p>WWOOF là một cơ hội tuyệt vời để khám phá thế giới mà không tốn kém nhiều. Hãy xem những gì bạn có thể làm tại các trang trại hữu cơ!</p>",
+        "<h2>1. Học hỏi về nông nghiệp hữu cơ</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-8.jpg\">",
+        "<p>Tại các trang trại WWOOF, bạn có thể học hỏi về các phương pháp nông nghiệp hữu cơ và thực hành chăm sóc động vật.</p>",
+        "<h2>2. Giao lưu với cộng đồng địa phương</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-9.jpg\">",
+        "<p>Trải nghiệm WWOOF không chỉ giúp bạn học hỏi về nông nghiệp mà còn giúp bạn giao lưu với cộng đồng địa phương.</p>"
+      ]
+    },
+    {
+      "id": 4,
+      "release": "09/10/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-4-1024x766.jpg",
+      "title": "Hướng dẫn tham gia chương trình giảng dạy ngoại ngữ tại nước ngoài",
+      "content": [
+        "<p>Tham gia giảng dạy ngoại ngữ là một cách tuyệt vời để du lịch và kiếm thu nhập. Hãy tìm hiểu cách tham gia chương trình này!</p>",
+        "<h2>1. Chuẩn bị tài liệu</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-10.jpg\">",
+        "<p>Chuẩn bị tài liệu giảng dạy là bước quan trọng để bạn có thể chia sẻ kiến thức và kỹ năng với học viên của mình.</p>",
+        "<h2>2. Tìm kiếm cơ hội</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-11.jpg\">",
+        "<p>Trước khi tham gia giảng dạy ở nước ngoài, hãy tìm kiếm cơ hội và chuẩn bị hồ sơ của bạn.</p>"
+      ]
+    },
+    {
+      "id": 5,
+      "release": "11/12/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-5.jpg",
+      "title": "5 điểm đến du lịch không tốn kém ở Châu Á",
+      "content": [
+        "<p>Khám phá những điểm đến đẹp mắt và thú vị ở Châu Á mà bạn có thể khám phá mà không cần phải chi tiêu nhiều!</p>",
+        "<h2>1. Đảo Bali, Indonesia</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-12.jpg\">",
+        "<p>Đảo Bali với bãi biển đẹp và văn hóa độc đáo là một điểm đến không thể bỏ qua ở Châu Á.</p>",
+        "<h2>2. Thành phố Siem Reap, Campuchia</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-13.jpg\">",
+        "<p>Thành phố Siem Reap nổi tiếng với di sản văn hóa Angkor Wat và là một điểm đến hấp dẫn ở Châu Á.</p>"
       ]
     }
   ]

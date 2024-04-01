@@ -108,10 +108,10 @@
         <div class="row">
           <div
             class="col-lg-4 col-6 m-auto mb-2"
-            *ngFor="let pro of travelData.products"
+            *ngFor="let pro of travelData"
           >
             <div class="card m-auto w-100">
-              <a href="product/{{ pro.id }}">
+              <a [routerLink]="['/product', pro.id]">
                 <img
                   src="{{ pro.image[0] }}"
                   class="card-img-top"

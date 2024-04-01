@@ -19,21 +19,20 @@
     <h2>Blog mới nhất</h2>
     <div class="row justify-content-center">
       <div class="col-md-8">
-        <a [routerLink]="['/blog/1']">
+        <a [routerLink]="['/blog/', dataTop[0].id]">
           <div class="card text-bg-dark">
             <img
-              src="assets/img/nuixanh.jpg"
+              src="{{ dataTop[0].image }}"
               class="card-img opacity-50"
               alt="..."
             />
             <div class="card-img-overlay">
-              <h5 class="card-title">Leo núi nàoooo</h5>
+              <h5 class="card-title">{{ dataTop[0].title }}</h5>
               <p class="card-text">
-                tourVN sẽ giới thiệu cho bạn các ngọn núi đang là điểm du lịch
-                hót hòn họt hiện tại ở Việt Nam
+                Bài viết của tourVN hợp tác cùng chat GPT ❤️👌
               </p>
               <p class="card-text">
-                <small>Chỉnh sửa gần nhất 2 ngày trước</small>
+                <small>Ngày ra mắt {{ dataTop[0].release }}</small>
               </p>
             </div>
           </div>
@@ -41,204 +40,44 @@
       </div>
       <div class="col-md-4">
         <div class="d-flex flex-md-column">
-          <a href="#" class="">
-            <div class="card text-bg-dark overflow-hidden">
-              <img
-                src="assets/img/nuixanh.jpg"
-                class="card-img opacity-50"
-                alt="..."
-              />
-              <div class="card-img-overlay">
-                <h5 class="card-title">Leo núi nàoooo</h5>
-                <p class="card-text">
-                  tourVN sẽ giới thiệu cho bạn các ngọn núi đang là điểm du lịch
-                  hót hòn họt hiện tại ở Việt Nam
-                </p>
-                <p class="card-text">
-                  <small>Chỉnh sửa gần nhất 2 ngày trước</small>
-                </p>
+          <div class="" *ngFor="let item of [dataTop[1], dataTop[2]]">
+            <a class="" [routerLink]="['/blog', item.id]">
+              <div class="card text-bg-dark overflow-hidden">
+                <img
+                  src="{{ item.image }}"
+                  class="card-img opacity-50"
+                  alt="..."
+                />
+                <div class="card-img-overlay">
+                  <h5 class="card-title">{{ item.title }}</h5>
+                  <p class="card-text">
+                    Bài viết của tourVN hợp tác cùng chat GPT ❤️👌
+                  </p>
+                  <p class="card-text">
+                    <small>Chỉnh sửa gần nhất 2 ngày trước</small>
+                  </p>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="#" class="">
-            <div class="card text-bg-dark overflow-hidden">
-              <img
-                src="assets/img/nuixanh.jpg"
-                class="card-img opacity-50"
-                alt="..."
-              />
-              <div class="card-img-overlay">
-                <h5 class="card-title">Leo núi nàoooo</h5>
-                <p class="card-text">
-                  tourVN sẽ giới thiệu cho bạn các ngọn núi đang là điểm du lịch
-                  hót hòn họt hiện tại ở Việt Nam
-                </p>
-                <p class="card-text">
-                  <small>Chỉnh sửa gần nhất 2 ngày trước</small>
-                </p>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
 
     <h2 class="mt-5 mb-3">Bài viết khác</h2>
     <div class="row">
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="#">
+      <div class="col-lg-3 col-md-4 col-sm-6" *ngFor="let item of data">
+        <a [routerLink]="['/blog', item.id]">
           <div class="card mb-3">
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
+            <img src="{{ item.image }}" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Chợ nổi Cần Thơ</h5>
+              <h5 class="card-title">{{ item.title }}</h5>
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Bài viết của tourVN hợp tác cùng chat GPT ❤️👌
               </p>
               <p class="card-text">
                 <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-            </div>
-          </div></a
-        >
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="#">
-          <div class="card mb-3">
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Chợ nổi Cần Thơ</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-            </div>
-          </div></a
-        >
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="#">
-          <div class="card mb-3">
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Chợ nổi Cần Thơ</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-            </div>
-          </div></a
-        >
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="#">
-          <div class="card mb-3">
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Chợ nổi Cần Thơ</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-            </div>
-          </div></a
-        >
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="#">
-          <div class="card mb-3">
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Chợ nổi Cần Thơ</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-            </div>
-          </div></a
-        >
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="#">
-          <div class="card mb-3">
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Chợ nổi Cần Thơ</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-            </div>
-          </div></a
-        >
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="#">
-          <div class="card mb-3">
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Chợ nổi Cần Thơ</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
-                >
-              </p>
-            </div>
-          </div></a
-        >
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <a href="#">
-          <div class="card mb-3">
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Chợ nổi Cần Thơ</h5>
-              <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-              <p class="card-text">
-                <small class="text-body-secondary"
-                  >Last updated 3 mins ago</small
+                  >Ngày ra mắt {{ item.release }}</small
                 >
               </p>
             </div>
