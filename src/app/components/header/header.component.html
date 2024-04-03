@@ -17,12 +17,17 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <form class="position-relative" role="search">
+      <form
+        class="position-relative"
+        [formGroup]="searchInput"
+        (submit)="searchNow()"
+      >
         <input
           class="form-control rounded-5 ps-5"
           type="search"
           placeholder="Bạn muốn đi đâu..."
           aria-label="Search"
+          formControlName="searchText"
         />
         <i
           class="bi bi-search position-absolute fs-5 top-50 start-0 ms-3 translate-middle-y"

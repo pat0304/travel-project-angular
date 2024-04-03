@@ -10,15 +10,18 @@ import { ActivatedRoute } from '@angular/router';
 export class BlogDetailComponent {
   data: any;
   url: string = 'http://localhost:3000/blogs';
+  getBlogID: any;
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.http
-      .get(`${this.url}?id=${this.route.snapshot.paramMap.get('id')}`)
-      .subscribe((res) => {
+    this.route.params.subscribe((params) => {
+      this.getBlogID = params['id'];
+
+      this.http.get(`${this.url}?id=${this.getBlogID}`).subscribe((res) => {
         this.data = res;
       });
+    });
   }
 }

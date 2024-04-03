@@ -5,6 +5,7 @@ import { ProductComponent } from './components/product/product.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { DetailedProductComponent } from './components/detailed-product/detailed-product.component';
 import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
+import { SearchComponent } from './components/search/search.component';
 const routes: Routes = [
   {
     path: '',
@@ -23,12 +24,17 @@ const routes: Routes = [
     component: BlogComponent,
   },
   {
-    path: 'product/:id',
+    path: 'travel/:id',
     component: DetailedProductComponent,
   },
+
   {
     path: 'blog/:id',
     component: BlogDetailComponent,
+  },
+  {
+    path: 'search',
+    component: SearchComponent,
   },
 ];
 

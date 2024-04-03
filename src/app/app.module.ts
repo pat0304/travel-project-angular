@@ -17,6 +17,8 @@ import { CarouselDirective } from './components/home/home-components/tour-hot-ca
 import { BlogComponent } from './components/blog/blog.component';
 import { HomeBlogComponent } from './components/home/home-components/home-blog/home-blog.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +36,14 @@ import { HttpClientModule } from '@angular/common/http';
     BlogDetailComponent,
     CarouselDirective,
     HomeBlogComponent,
+    SearchComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
