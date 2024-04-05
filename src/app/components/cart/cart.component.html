@@ -1,0 +1,96 @@
+<div class="main container" style="margin-top: 100px; min-height: 500px">
+  <div class="row">
+    <div class="col-lg-9">
+      <h2 class="fw-bold text-center mb-5">Giỏ hàng</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Ảnh minh họa</th>
+            <th>Thông tin tour</th>
+            <th>Số lượng</th>
+            <th>Thành tiền</th>
+            <th>Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cartData">
+            <td>
+              <div
+                style="
+                  background: url('{{ item.image[0] }}');
+                  background-size: cover;
+                  background-position: center;
+                  height: 150px;
+                "
+              ></div>
+            </td>
+            <td>
+              <h5>{{ item.name }}</h5>
+              <div class="input-group flex-nowrap w-75 input-group-sm">
+                <input
+                  type="date"
+                  class="form-control"
+                  aria-label="Date"
+                  aria-describedby="addon-wrapping"
+                />
+              </div>
+              <strong class="text-danger fs-5">{{
+                item.price | number
+              }}</strong>
+            </td>
+            <td class="py-5">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic outlined example"
+              >
+                <button
+                  type="button"
+                  (click)="setQuantity(item.id, item.quantity - 1)"
+                  [disabled]="item.quantity == 1"
+                  class="btn btn-outline-primary bi bi-dash"
+                ></button>
+                <input
+                  type="button"
+                  value="{{ item.quantity }}"
+                  #quantity
+                  disabled
+                  class="btn btn-outline-primary"
+                />
+                <button
+                  type="button"
+                  (click)="setQuantity(item.id, item.quantity + 1)"
+                  class="btn btn-outline-primary bi bi-plus"
+                ></button>
+              </div>
+            </td>
+            <td class="py-5 fs-5 text-danger fw-bold">
+              {{ item.quantity * item.price | number }}
+            </td>
+            <td class="py-5">
+              <button class="btn btn-outline-danger">Xóa</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-lg-3 mt-5">
+      <div class="card w-100 mt-5">
+        <div class="card-header">Thanh toán</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Tổng cộng (VNĐ):</span><span>{{ Cart.total | number }}</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Thuế (2%):</span><span>{{ Cart.total * 0.02 | number }}</span>
+          </li>
+        </ul>
+        <div class="card-footer d-flex justify-content-between">
+          <span>Thành tiền (VNĐ):</span>
+          <span>{{ Cart.total + Cart.total * 0.02 | number }}</span>
+        </div>
+      </div>
+      <button class="btn btn-primary w-100 my-4">Thanh toán</button>
+    </div>
+  </div>
+</div>

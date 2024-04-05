@@ -53,44 +53,35 @@
       tabindex="0"
     >
       <div class="row m-auto">
-        <div class="col-md-4">
+        <div class="col-md-4" *ngFor="let item of dataB">
           <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-danger m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-danger m-2"
+              *ngIf="dataB.indexOf(item) + 1 == 1"
               >Top 1</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
-              <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
-              <a href="#" class="btn btn-primary">Đi ngay</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-warning m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-warning m-2"
+              *ngIf="dataB.indexOf(item) + 1 == 2"
               >Top 2</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
-              <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
-              <a href="#" class="btn btn-primary">Đi ngay</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-success m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-success m-2"
+              *ngIf="dataB.indexOf(item) + 1 == 3"
               >Top 3</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
+            <img
+              src="{{ item.image[0] }}"
+              class="card-img-top"
+              height="191px"
+              alt="..."
+            />
             <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
+              <h5 class="card-title text-nowrap overflow-hidden">
+                {{ item.name }}
+              </h5>
               <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+              <h4 class="card-title text-danger fw-bolder">{{ item.price }}</h4>
               <a href="#" class="btn btn-primary">Đi ngay</a>
             </div>
           </div>
@@ -105,44 +96,35 @@
       tabindex="0"
     >
       <div class="row m-auto">
-        <div class="col-md-4">
+        <div class="col-md-4" *ngFor="let item of dataT">
           <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-danger m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-danger m-2"
+              *ngIf="dataT.indexOf(item) + 1 == 1"
               >Top 1</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
-              <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
-              <a href="#" class="btn btn-primary">Đi ngay</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-warning m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-warning m-2"
+              *ngIf="dataT.indexOf(item) + 1 == 2"
               >Top 2</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
-              <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
-              <a href="#" class="btn btn-primary">Đi ngay</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-success m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-success m-2"
+              *ngIf="dataT.indexOf(item) + 1 == 3"
               >Top 3</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
+            <img
+              src="{{ item.image[0] }}"
+              class="card-img-top"
+              height="191px"
+              alt="..."
+            />
             <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
+              <h5 class="card-title text-nowrap overflow-hidden">
+                {{ item.name }}
+              </h5>
               <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+              <h4 class="card-title text-danger fw-bolder">{{ item.price }}</h4>
               <a href="#" class="btn btn-primary">Đi ngay</a>
             </div>
           </div>
@@ -157,44 +139,35 @@
       tabindex="0"
     >
       <div class="row m-auto">
-        <div class="col-md-4">
+        <div class="col-md-4" *ngFor="let item of dataN">
           <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-danger m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-danger m-2"
+              *ngIf="dataN.indexOf(item) + 1 == 1"
               >Top 1</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
-              <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
-              <a href="#" class="btn btn-primary">Đi ngay</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-warning m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-warning m-2"
+              *ngIf="dataN.indexOf(item) + 1 == 2"
               >Top 2</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
-              <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
-              <a href="#" class="btn btn-primary">Đi ngay</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card m-auto w-100 mb-3">
-            <span class="badge rounded-pill position-absolute bg-success m-2"
+            <span
+              class="badge rounded-pill position-absolute bg-success m-2"
+              *ngIf="dataN.indexOf(item) + 1 == 3"
               >Top 3</span
             >
-            <img src="assets/img/cantho.jpg" class="card-img-top" alt="..." />
+            <img
+              src="{{ item.image[0] }}"
+              class="card-img-top"
+              height="191px"
+              alt="..."
+            />
             <div class="card-body">
-              <h5 class="card-title">Cần Thơ</h5>
+              <h5 class="card-title text-nowrap overflow-hidden">
+                {{ item.name }}
+              </h5>
               <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
-              <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+              <h4 class="card-title text-danger fw-bolder">{{ item.price }}</h4>
               <a href="#" class="btn btn-primary">Đi ngay</a>
             </div>
           </div>

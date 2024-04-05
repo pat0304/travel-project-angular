@@ -101,7 +101,7 @@
           <strong
             class="price text-danger"
             style="font-size: 35px; text-shadow: 0 0 1px black"
-            >{{ detailedProduct[0].price }} VNĐ</strong
+            >{{ moneyFormat(detailedProduct[0].price) }} VNĐ</strong
           >
         </div>
         <div class="input-group flex-nowrap w-50">
@@ -114,32 +114,14 @@
           />
         </div>
         <div class="row mt-3">
-          <div class="">
-            <h6>Loại tour:</h6>
-            <input
-              type="radio"
-              class="btn-check"
-              name="options"
-              id="on-day"
-              autocomplete="off"
-              checked
-            />
-            <label class="btn btn-outline-dark" for="on-day">Trong ngày</label>
-
-            <input
-              type="radio"
-              class="btn-check"
-              name="options"
-              id="two-day-one-night"
-              autocomplete="off"
-            />
-            <label class="btn btn-outline-dark" for="two-day-one-night"
-              >2N1Đ</label
-            >
+          <div class="form">
+            <input type="number" min="1" #quantity value="1" required />
           </div>
         </div>
         <br />
-        <a href="#" class="btn btn-danger btn-lg">Đặt tour ngay</a>
+        <button class="btn btn-danger btn-lg" (click)="addCart(quantity.value)">
+          Đặt tour ngay
+        </button>
       </div>
     </div>
     <div class="row">

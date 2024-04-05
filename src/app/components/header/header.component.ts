@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Cart } from '../../../module/Cart';
 
 @Component({
   selector: 'app-header',
@@ -14,9 +15,10 @@ export class HeaderComponent {
   constructor(private router: Router) {}
   searchNow(): void {
     this.router.navigate(['/search'], {
-      queryParams: { search: this.searchInput.value.searchText },
+      queryParams: { searchQuery: this.searchInput.value.searchText },
     });
   }
+  cart: Cart = inject(Cart);
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.

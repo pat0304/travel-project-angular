@@ -17,8 +17,10 @@ import { CarouselDirective } from './components/home/home-components/tour-hot-ca
 import { BlogComponent } from './components/blog/blog.component';
 import { HomeBlogComponent } from './components/home/home-components/home-blog/home-blog.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchComponent } from './components/search/search.component';
+import { Cart } from '../module/Cart';
+import { CartComponent } from './components/cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -37,14 +39,16 @@ import { SearchComponent } from './components/search/search.component';
     CarouselDirective,
     HomeBlogComponent,
     SearchComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [Cart],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
