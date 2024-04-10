@@ -54,7 +54,10 @@
     >
       <div class="row m-auto">
         <div class="col-md-4" *ngFor="let item of dataB">
-          <div class="card m-auto w-100 mb-3">
+          <div
+            class="card m-auto w-100 mb-3"
+            [routerLink]="['/travel', item.id]"
+          >
             <span
               class="badge rounded-pill position-absolute bg-danger m-2"
               *ngIf="dataB.indexOf(item) + 1 == 1"
@@ -97,7 +100,10 @@
     >
       <div class="row m-auto">
         <div class="col-md-4" *ngFor="let item of dataT">
-          <div class="card m-auto w-100 mb-3">
+          <div
+            class="card m-auto w-100 mb-3"
+            [routerLink]="['/travel', item.id]"
+          >
             <span
               class="badge rounded-pill position-absolute bg-danger m-2"
               *ngIf="dataT.indexOf(item) + 1 == 1"
@@ -140,7 +146,10 @@
     >
       <div class="row m-auto">
         <div class="col-md-4" *ngFor="let item of dataN">
-          <div class="card m-auto w-100 mb-3">
+          <div
+            class="card m-auto w-100 mb-3"
+            [routerLink]="['/travel', item.id]"
+          >
             <span
               class="badge rounded-pill position-absolute bg-danger m-2"
               *ngIf="dataN.indexOf(item) + 1 == 1"

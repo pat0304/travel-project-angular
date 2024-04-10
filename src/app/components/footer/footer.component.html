@@ -50,79 +50,87 @@
 >
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="loginLabel">Đăng nhập</h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <div class="input-group mb-3">
-          <span
-            class="input-group-text bi bi-person-fill"
-            id="basic-addon1"
-          ></span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Username"
-            aria-label="Username"
-            aria-describedby="basic-addon1"
-          />
-        </div>
-
-        <div class="input-group mb-3">
-          <span class="input-group-text bi bi-key-fill" id="password"></span>
-          <input
-            type="password"
-            class="form-control"
-            id="password-input"
-            placeholder="Password"
-            aria-label="Password"
-            aria-describedby="password"
-          />
+      <form (ngSubmit)="submit()" [formGroup]="loginForm">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginLabel">Đăng nhập</h1>
           <button
-            class="btn btn-outline-secondary input-group-btn bi bi-eye-fill"
             type="button"
-            id="button-addon-1"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
           ></button>
         </div>
-        <script>
-          const btnPassword = document.getElementById("button-addon-1");
-          let inputPassword = document.getElementById("password-input");
-          btnPassword.addEventListener("click", function (e) {
-            let btn = e.target;
-            if (inputPassword.getAttribute("type") === "password") {
-              btn.classList.remove("bi-eye-fill");
-              btn.classList.add("bi-eye-slash-fill");
-              inputPassword.setAttribute("type", "text");
-            } else {
-              inputPassword.setAttribute("type", "password");
-              btn.classList.remove("bi-eye-slash-fill");
-              btn.classList.add("bi-eye-fill");
-            }
-          });
-        </script>
 
-        <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" id="gridCheck1" />
-          <label class="form-check-label" for="gridCheck1">
-            Nhớ đăng nhập
-          </label>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <div
-          class="d-flex w-100 p-2 justify-content-between align-items-center"
-        >
-          <a href="register.html" class="text-decoration-none">Đăng ký ngay</a>
+        <div class="modal-body">
+          <div class="input-group">
+            <span
+              class="input-group-text bi bi-person-fill"
+              id="basic-addon1"
+            ></span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              [formControl]="loginForm.controls.username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          @if (loginForm.controls.username.dirty ||
+          loginForm.controls.username.touched) {
+          @if(loginForm.controls.username.errors?.['required']){
+          <p class="text-danger">Vui lòng nhập Tên đăng nhập</p>
+          }}
 
-          <a href="#" class="btn btn-primary">Đăng nhập</a>
+          <div class="input-group mt-3">
+            <span class="input-group-text bi bi-key-fill" id="password"></span>
+            <input
+              type="password"
+              class="form-control"
+              id="password-input"
+              placeholder="Password"
+              aria-label="Password"
+              aria-describedby="password"
+              [formControl]="loginForm.controls.password"
+            />
+            <button
+              class="btn btn-outline-secondary input-group-btn bi bi-eye-fill"
+              type="button"
+              id="button-addon-1"
+            ></button>
+          </div>
+          @if(loginForm.controls.password.dirty ||
+          loginForm.controls.password.touched){
+          @if(loginForm.controls.password.errors?.['required']){
+          <p class="text-danger">Vui lòng nhập mật khẩu</p>
+          } @if(loginForm.controls.password.errors?.['maxlength'] ||
+          loginForm.controls.password.errors?.['minlength']){
+          <p class="text-danger">Độ dài mật khẩu từ 6 - 16 ký tự</p>
+          } }
+          <div class="form-check mb-3">
+            <input
+              class="form-check-input"
+              [formControl]="loginForm.controls.rememberMe"
+              type="checkbox"
+              id="gridCheck1"
+            />
+            <label class="form-check-label" for="gridCheck1">
+              Nhớ đăng nhập
+            </label>
+          </div>
         </div>
-      </div>
+        <div class="modal-footer">
+          <div
+            class="d-flex w-100 p-2 justify-content-between align-items-center"
+          >
+            <a [routerLink]="['/register']" class="text-decoration-none"
+              >Đăng ký ngay</a
+            >
+
+            <button class="btn btn-primary" type="submit">Đăng nhập</button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>

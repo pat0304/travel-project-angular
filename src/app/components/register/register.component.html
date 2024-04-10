@@ -1,0 +1,181 @@
+<div class="main" style="margin-top: 100px">
+  <div class="container">
+    {{ register.value | json }}
+    <form
+      action="#"
+      class="row justify-content-center"
+      [formGroup]="register"
+      (ngSubmit)="submit()"
+    >
+      <div class="col-md-6">
+        <h2>Đăng ký</h2>
+        <div class="row my-3">
+          <div class="col">
+            <div class="form-floating">
+              <input
+                type="text"
+                [formControl]="register.controls.lastName"
+                class="form-control"
+                id="input-lastname"
+                placeholder="Họ"
+                required
+              />
+              <label for="input-lastname">Họ</label>
+              @if(register.controls.lastName.errors?.['required']&&(register.controls.lastName.dirty
+              || register.controls.lastName.touched)){
+              <p class="text-danger">Vui lòng nhập Họ.</p>
+              }
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                [formControl]="register.controls.firstName"
+                id="input-firstname"
+                placeholder="Tên"
+                required
+              />
+              <label for="input-firstname">Tên</label>
+              @if(register.controls.firstName.errors?.['required']&&(register.controls.firstName.dirty
+              || register.controls.firstName.touched)){
+              <p class="text-danger">Vui lòng nhập Tên.</p>
+              }
+            </div>
+          </div>
+        </div>
+        <div class="radio mb-3">
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio1"
+              [formControl]="register.controls.gender"
+              value="Nam"
+            />
+            <label class="form-check-label" for="inlineRadio1">Nam</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="inlineRadioOptions"
+              id="inlineRadio2"
+              [formControl]="register.controls.gender"
+              value="Nữ"
+            />
+            <label class="form-check-label" for="inlineRadio2">Nữ</label>
+          </div>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            [formControl]="register.controls.username"
+            placeholder="Tên đăng nhập"
+            required
+          />
+          <label for="username">Tên đăng nhập</label>
+          @if(register.controls.username.errors?.['required']&&(register.controls.username.dirty
+          || register.controls.username.touched)){
+          <p class="text-danger">Vui lòng nhập Tên đăng nhập.</p>
+          }
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="sdt"
+            [formControl]="register.controls.phone"
+            placeholder="Số điện thoại"
+            required
+          />
+          <label for="sdt">Số điện thoại</label>
+          @if((register.controls.phone.dirty ||
+          register.controls.phone.touched)){
+          @if(register.controls.phone.errors?.['required']){
+          <p class="text-danger">Vui lòng nhập Số điện thoại.</p>
+          } @if(register.controls.phone.errors?.['pattern']){
+          <p class="text-danger">
+            Số điện thoại nên bắt đầu bằng 0 và có 10 - 11 số.
+          </p>
+          } }
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Email"
+            [formControl]="register.controls.email"
+            required
+          />
+          <label for="email">Email</label>
+          @if((register.controls.email.dirty ||
+          register.controls.email.touched)){ @if
+          (register.controls.email.errors?.["required"] ) {
+          <p class="text-danger">Vui lòng nhập Email</p>
+          } @if(register.controls.email.errors?.["email"]){
+          <p class="text-danger">Cú pháp email không hợp lệ</p>
+          } }
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            [formControl]="register.controls.password"
+            placeholder="Mật khẩu"
+            required
+          />
+          <label for="password">Mật khẩu</label>
+          @if((register.controls.password.dirty ||
+          register.controls.password.touched)){ @if
+          (register.controls.password.errors?.["required"] ) {
+          <p class="text-danger">Vui lòng nhập Mật khẩu</p>
+          }@if (register.controls.password.errors?.['minlength'] ||
+          register.controls.password.errors?.["maxlength"]) {
+          <p class="text-danger">Mật khẩu từ 6 - 16 kí tự</p>
+          } }
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            id="repassword"
+            [formControl]="register.controls.rePassword"
+            placeholder="Nhập lại mật khẩu"
+            required
+          />
+          <label for="repassword">Nhập lại mật khẩu</label>
+          @if((register.controls.rePassword.dirty ||
+          register.controls.rePassword.touched)){ @if
+          (register.controls.rePassword.errors?.["required"] ) {
+          <p class="text-danger">Vui lòng Xác nhận lại Mật khẩu</p>
+          }@if (register.controls.rePassword.errors?.['minlength'] ||
+          register.controls.rePassword.errors?.["maxlength"]) {
+          <p class="text-danger">Mật khẩu từ 6 - 16 kí tự</p>
+          } }
+        </div>
+        <div class="checkbox">
+          <input
+            type="checkbox"
+            id="agree"
+            [formControl]="register.controls.agree"
+          />
+          <label for="agree">Đồng ý với mọi điều khoản</label>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-danger shadow-lg float-end p-2 mb-5"
+          [disabled]="!register.valid"
+        >
+          Đăng ký
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

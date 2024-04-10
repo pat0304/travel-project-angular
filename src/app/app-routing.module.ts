@@ -7,6 +7,8 @@ import { DetailedProductComponent } from './components/detailed-product/detailed
 import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 import { SearchComponent } from './components/search/search.component';
 import { CartComponent } from './components/cart/cart.component';
+import { RegisterComponent } from './components/register/register.component';
+import { UserComponent } from './components/user/user.component';
 const routes: Routes = [
   {
     path: '',
@@ -37,7 +39,18 @@ const routes: Routes = [
     path: 'search',
     component: SearchComponent,
   },
-  { path: 'cart', component: CartComponent },
+  {
+    path: 'cart',
+    component: CartComponent,
+  },
+  {
+    path: 'register',
+    component: RegisterComponent,
+  },
+  {
+    path: 'user',
+    component: UserComponent,
+  },
 ];
 
 @NgModule({

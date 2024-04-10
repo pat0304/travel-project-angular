@@ -20,14 +20,14 @@
       <form
         class="position-relative"
         [formGroup]="searchInput"
-        (submit)="searchNow()"
+        (ngSubmit)="submit()"
       >
         <input
           class="form-control rounded-5 ps-5"
           type="search"
           placeholder="Bạn muốn đi đâu..."
           aria-label="Search"
-          formControlName="searchText"
+          [formControl]="searchInput.controls.searchText"
         />
         <i
           class="bi bi-search position-absolute fs-5 top-50 start-0 ms-3 translate-middle-y"
@@ -42,7 +42,6 @@
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
-            href="#"
             role="button"
             data-bs-toggle="dropdown"
             aria-expanded="false"
@@ -79,8 +78,11 @@
             href="#"
             data-bs-target="#login"
             data-bs-toggle="modal"
+            *ngIf="user.user == null"
             ><i class="bi bi-person-circle"> Tài khoản</i></a
-          >
+          ><a class="nav-link" *ngIf="user.user != null">{{
+            user.user.firstName
+          }}</a>
         </li>
       </ul>
     </div>

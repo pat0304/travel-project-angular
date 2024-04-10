@@ -21,6 +21,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchComponent } from './components/search/search.component';
 import { Cart } from '../module/Cart';
 import { CartComponent } from './components/cart/cart.component';
+import { RegisterComponent } from './components/register/register.component';
+import { User } from '../module/User';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,8 @@ import { CartComponent } from './components/cart/cart.component';
     HomeBlogComponent,
     SearchComponent,
     CartComponent,
+    RegisterComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,7 @@ import { CartComponent } from './components/cart/cart.component';
     ReactiveFormsModule,
     FormsModule,
   ],
-  providers: [Cart],
+  providers: [Cart, User],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
