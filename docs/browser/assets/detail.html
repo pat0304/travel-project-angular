@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tourVN</title>
+  <link rel="shortcut icon" href="./img/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light position-fixed start-0 end-0 top-0 z-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="tourVN" height="50"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="position-relative" role="search">
+          <input class="form-control rounded-5 ps-5" type="search" placeholder="Bạn muốn đi đâu..." aria-label="Search">
+          <i class="bi bi-search position-absolute fs-5 top-50 start-0 ms-3 translate-middle-y"></i>
+        </form>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 fw-bold gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Du lịch
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bắc</a></li>
+              <li><a class="dropdown-item" href="#">Trung</a></li>
+              <!-- <li><hr class="dropdown-divider"></li> -->
+              <li><a class="dropdown-item" href="#">Nam</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tin tức</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-cart-fill"> Giỏ hàng</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-target="#login" data-bs-toggle="modal"><i class="bi bi-person-circle"> Tài khoản</i></a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="main" style="margin-top: 100px;">
+    <div class="container">
+    <div class="row gap-2">
+      <div class="col-lg-6">
+        <div class="tab-content w-100" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-bac" role="tabpanel" aria-labelledby="pills-bac-tab" tabindex="0">
+            <img src="./img/cantho.jpg" class="w-100" alt="">
+          </div>
+          <div class="tab-pane fade" id="pills-trung" role="tabpanel" aria-labelledby="pills-trung-tab" tabindex="0">
+            <img src="./img/hoian.jpg" class="w-100" alt="">
+          </div>
+          <div class="tab-pane fade" id="pills-nam" role="tabpanel" aria-labelledby="pills-nam-tab" tabindex="0">
+            <img src="./img/nuixanh.jpg" class="w-100" alt="">
+          </div>
+        </div>
+        <ul class="nav nav-underline my-3 justify-content-center"  id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active p-1" id="pills-bac-tab" data-bs-toggle="pill" data-bs-target="#pills-bac" type="button" role="tab" aria-controls="pills-bac" aria-selected="true"><img src="./img/cantho.jpg" height="30px" width="30px" alt=""></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link p-1" id="pills-trung-tab" data-bs-toggle="pill" data-bs-target="#pills-trung" type="button" role="tab" aria-controls="pills-trung" aria-selected="false"><img src="./img/hoian.jpg" height="30px" width="30px" alt=""></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link p-1" id="pills-nam-tab" data-bs-toggle="pill" data-bs-target="#pills-nam" type="button" role="tab" aria-controls="pills-nam" aria-selected="false"><img src="./img/nuixanh.jpg" height="30px" width="30px" alt=""></button>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-5">
+        <div class="row mb-5">
+        <h1>Du lịch Cần Thơ</h1>
+        <strong class="price text-danger" style="font-size: 35px; text-shadow: 0 0 1px black">800.000 VNĐ</strong>
+        </div>
+            <div class="input-group flex-nowrap w-50">
+              <span class="input-group-text" id="addon-wrapping">Ngày đi</span>
+              <input type="date" class="form-control" aria-label="Date" aria-describedby="addon-wrapping">
+            </div>
+            <div class="row mt-3">
+            <div class="">
+            <h6>Loại tour:</h6>
+            <input type="radio" class="btn-check" name="options" id="on-day" autocomplete="off" checked>
+            <label class="btn btn-outline-dark" for="on-day">Trong ngày</label>
+
+            <input type="radio" class="btn-check" name="options" id="two-day-one-night" autocomplete="off">
+            <label class="btn btn-outline-dark" for="two-day-one-night">2N1Đ</label>
+          </div></div>
+            <br>
+            <a href="#" class="btn btn-danger  btn-lg">Đặt tour ngay</a>
+    </div>
+    </div>
+    <div class="row">
+      <h3>Mô tả</h3>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h4>Về Dịch Vụ Này</h4>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body"><p>
+              Bắt đầu chuyến phiêu lưu tìm hiểu về di tích lịch sử Địa Đạo Củ Chi và đồng bằng sông Cửu Long từ Hồ Chí Minh! Khám phá hệ thống đường hầm bí mật của Địa Đạo Củ Chi và hiểu rõ hơn cách quân dân ta sống sót dưới những điều kiện khắc nghiệt của chiến tranh. Trải nghiệm một vài mạng lưới ngầm của Địa Đạo Củ Chi để có những cảm xúc chân thật nhất về cuộc sống thời chiến. <br>
+
+Tìm hiểu về lịch sử đất nước trong những năm tháng chiến tranh hào hùng và câu chuyện đằng sau mạng lưới đường hầm phức tạp tại Củ Chi. Ghé thăm thành phố Mỹ Tho và đi xe đạp dạo quanh làng để gặp gỡ và trò chuyện với người dân. <br>
+
+Lên thuyền và thư thái ngắm nhìn quang cảnh hai bên bờ sông Mỹ Tho (khu vực đồng bằng sông Cửu Long), đắm mình trong làn gió mang đậm hương vị Miền Tây Nam Bộ. Ngoài ra, đừng bỏ lỡ vẻ đẹp thoáng qua của 4 cồn xinh đẹp: Long, Lân, Quy và Phụng dọc theo hai bên bờ. <br>
+
+Dừng chân tại một xưởng sản xuất kẹo dừa tại địa phương và thưởng thức các loại trái cây tươi theo mùa cùng với trà mật ong hoặc trà hoa quả. Có cơ hội để xem một buổi biểu diễn âm nhạc dân gian mang đậm chất miền Nam Việt Nam được thực hiện bởi người dân địa phương. Hãy tận hưởng tour ngày đến di tích lịch sử Địa Đạo Củ Chi với dịch vụ đón và trả khách từ các khách sạn hay điểm tập trung tại quận 1, thành phố Hồ Chí Minh.</p>
+<img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_720/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/yvmkvteansp7y5aufxmf/TourNg%C3%A0yKhuDiT%C3%ADch%C4%90%E1%BB%8Ba%C4%90%E1%BA%A1oC%E1%BB%A7Chi%C4%90%E1%BB%93ngB%E1%BA%B1ngS%C3%B4ngC%E1%BB%ADuLongt%E1%BB%ABTPH%E1%BB%93Ch%C3%ADMinh.webp" width="100%" class="position-relative translate-middle-x start-50" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h4>Những điều cần lưu ý</h4>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="klk-markdown klk-markdown--highlight" data-v-87a71e24=""><h3>Bí kíp tourVN:</h3><ul><li>Nếu bạn đang tìm kiếm một tour khám phá lịch sử thành phố, thử đặt tour nửa ngày khám phá khu di tích đường hầm trong lòng đất phức tạp nhất Việt Nam</li></ul><h3>Nên Mang Gì:</h3><ul><li>Mũ</li><li>Kính mát</li><li>Thuốc chống côn trùng</li><li>Kem chống nắng</li></ul></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container my-4">
+    <h3>Các Tour Khác</h3>
+    <div class="row m-auto">
+      <div class="col-md-4">
+        <div class="card m-auto w-100">
+          <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cần Thơ</h5>
+            <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+            <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+            <a href="#" class="btn btn-primary">Đi ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card m-auto w-100">
+          <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cần Thơ</h5>
+            <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+            <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+            <a href="#" class="btn btn-primary">Đi ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card m-auto w-100">
+          <img src="./img/cantho.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cần Thơ</h5>
+            <p class="card-text">Chuyến du lịch 2 ngày 1 đêm</p>
+            <h4 class="card-title text-danger fw-bolder">900.000đ</h4>
+            <a href="#" class="btn btn-primary">Đi ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <footer class="border-top p-5" style="height: 300px;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="./img/logo.png" alt="" srcset="">
+        </div>
+        <ul class="col list-unstyled">
+          <li class="mb-4"><strong>Về tourVn</strong></li>
+          <li><a href="#" class="text-dark">Về chúng tôi </a></li>
+          <li><a href="#" class="text-dark">tourVN blog </a></li>
+          <li><a href="#" class="text-dark">Cơ hội việc làm </a></li>
+          <li><a href="#" class="text-dark">Điểm thưởng</a></li>
+        </ul>
+        <ul class="col list-unstyled">
+          <li class="mb-4"><strong>Đối tác</strong></li>
+          <li><a href="#" class="text-dark">Đăng ký nhà cung cấp</a></li>
+          <li><a href="#" class="text-dark">Đối tác đăng nhập</a></li>
+          <li><a href="#" class="text-dark">Đối tác liên kết</a></li>
+          <li><a href="#" class="text-dark">Chương trình cho người nổi tiếng</a></li>
+          <li><a href="#" class="text-dark">Chương trình cho đại lý</a></li>
+          <li><a href="#" class="text-dark">Hợp tác Marketing & phân phối</a></li>
+        </ul>
+        <ul class="col list-unstyled">
+          <li class="mb-4"><strong>Điều khoản</strong></li>
+          <li><a href="#" class="text-dark">Điều khoản sử dụng</a></li>
+          <li><a href="#" class="text-dark">Chính sách bảo mật</a></li>
+          <li><a href="#" class="text-dark">Chính sách Cookie</a></li>
+          <li><a href="#" class="text-dark">Chương trình thưởng phát hiện lỗi phần mềm</a></li>
+          <li><a href="#" class="text-dark">Chính sách và quy định</a></li>
+          <li><a href="#" class="text-dark">Chính sách phúc lợi cho động vật</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="loginLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginLabel">Đăng nhập</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text bi bi-person-fill" id="basic-addon1"></span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text bi bi-key-fill" id="password"></span>
+            <input type="password" class="form-control" id="password-input" placeholder="Password" aria-label="Password" aria-describedby="password">
+            <button class="btn btn-outline-secondary input-group-btn bi bi-eye-fill" type="button" id="button-addon-1"></button>
+          </div>
+          <script>
+            const btnPassword = document.getElementById("button-addon-1");
+            let inputPassword = document.getElementById("password-input");
+            btnPassword.addEventListener("click", function(e) {
+              let btn = e.target
+              if (inputPassword.getAttribute("type") === "password") {
+                btn.classList.remove("bi-eye-fill");
+                btn.classList.add("bi-eye-slash-fill")
+                inputPassword.setAttribute("type", "text")
+              } else {
+                inputPassword.setAttribute("type", "password")
+                btn.classList.remove("bi-eye-slash-fill");
+                btn.classList.add("bi-eye-fill")
+              }
+            })
+          </script>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="gridCheck1">
+            <label class="form-check-label" for="gridCheck1">
+              Nhớ đăng nhập
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex w-100 p-2 justify-content-between align-items-center">
+            <a href="#" class=" text-decoration-none">Đăng ký ngay</a>
+
+            <a href="#" class="btn btn-primary">Đăng nhập</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+</body>
+
+</html>

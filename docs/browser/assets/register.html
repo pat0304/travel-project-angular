@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tourVN</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light position-fixed start-0 end-0 top-0 z-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="tourVN" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="position-relative" role="search">
+                    <input class="form-control rounded-5 ps-5" type="search" placeholder="Bạn muốn đi đâu..."
+                        aria-label="Search">
+                    <i class="bi bi-search position-absolute fs-5 top-50 start-0 ms-3 translate-middle-y"></i>
+                </form>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 fw-bold gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Du lịch
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Bắc</a></li>
+                            <li><a class="dropdown-item" href="#">Trung</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Nam</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tin tức</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-cart-fill"> Giỏ hàng</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-target="#login" data-bs-toggle="modal"><i
+                                class="bi bi-person-circle"> Tài khoản</i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+<div class="main" style="margin-top: 100px;">
+    <div class="container">
+        <form action="#" class="row justify-content-center">
+        <div class="col-md-6">
+            <h2>Đăng ký</h2>
+            <div class="row my-3">
+                <div class="col">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="input-lastname" placeholder="Họ" required>
+                    <label for="input-lastname">Họ</label>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="input-firstname" placeholder="Tên" required>
+                          <label for="input-firstname">Tên</label>
+                      </div>
+                </div>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="username" placeholder="Tên đăng nhập" required>
+                  <label for="username">Tên đăng nhập</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="sdt" placeholder="Số điện thoại" required>
+                  <label for="sdt">Số điện thoại</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                  <label for="email">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Mật khẩu" required>
+                  <label for="password">Mật khẩu</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="repassword" placeholder="Nhập lại mật khẩu" required>
+                  <label for="repassword">Nhập lại mật khẩu</label>
+              </div>
+              <button type="submit" class="btn btn-danger shadow-lg float-end p-2 mb-5">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <footer class="border-top p-5" style="height: 300px;">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./img/logo.png" alt="" srcset="">
+                </div>
+                <ul class="col list-unstyled">
+                    <li class="mb-4"><strong>Về tourVn</strong></li>
+                    <li><a href="#" class="text-dark">Về chúng tôi </a></li>
+                    <li><a href="#" class="text-dark">tourVN blog </a></li>
+                    <li><a href="#" class="text-dark">Cơ hội việc làm </a></li>
+                    <li><a href="#" class="text-dark">Điểm thưởng</a></li>
+                </ul>
+                <ul class="col list-unstyled">
+                    <li class="mb-4"><strong>Đối tác</strong></li>
+                    <li><a href="#" class="text-dark">Đăng ký nhà cung cấp</a></li>
+                    <li><a href="#" class="text-dark">Đối tác đăng nhập</a></li>
+                    <li><a href="#" class="text-dark">Đối tác liên kết</a></li>
+                    <li><a href="#" class="text-dark">Chương trình cho người nổi tiếng</a></li>
+                    <li><a href="#" class="text-dark">Chương trình cho đại lý</a></li>
+                    <li><a href="#" class="text-dark">Hợp tác Marketing & phân phối</a></li>
+                </ul>
+                <ul class="col list-unstyled">
+                    <li class="mb-4"><strong>Điều khoản</strong></li>
+                    <li><a href="#" class="text-dark">Điều khoản sử dụng</a></li>
+                    <li><a href="#" class="text-dark">Chính sách bảo mật</a></li>
+                    <li><a href="#" class="text-dark">Chính sách Cookie</a></li>
+                    <li><a href="#" class="text-dark">Chương trình thưởng phát hiện lỗi phần mềm</a></li>
+                    <li><a href="#" class="text-dark">Chính sách và quy định</a></li>
+                    <li><a href="#" class="text-dark">Chính sách phúc lợi cho động vật</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="modal fade" id="login" aria-hidden="true" aria-labelledby="loginLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginLabel">Đăng nhập</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bi bi-person-fill" id="basic-addon1"></span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bi bi-key-fill" id="password"></span>
+                        <input type="password" class="form-control" id="password-input" placeholder="Password"
+                            aria-label="Password" aria-describedby="password">
+                        <button class="btn btn-outline-secondary input-group-btn bi bi-eye-fill" type="button"
+                            id="button-addon-1"></button>
+                    </div>
+                    <script>
+                    const btnPassword = document.getElementById("button-addon-1");
+                    let inputPassword = document.getElementById("password-input");
+                    btnPassword.addEventListener("click", function(e) {
+                        let btn = e.target
+                        if (inputPassword.getAttribute("type") === "password") {
+                            btn.classList.remove("bi-eye-fill");
+                            btn.classList.add("bi-eye-slash-fill")
+                            inputPassword.setAttribute("type", "text")
+                        } else {
+                            inputPassword.setAttribute("type", "password")
+                            btn.classList.remove("bi-eye-slash-fill");
+                            btn.classList.add("bi-eye-fill")
+                        }
+                    })
+                    </script>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Nhớ đăng nhập
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex w-100 p-2 justify-content-between align-items-center">
+                        <a href="#" class=" text-decoration-none">Đăng ký ngay</a>
+
+                        <a href="#" class="btn btn-primary">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

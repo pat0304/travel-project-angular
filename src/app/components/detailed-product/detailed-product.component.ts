@@ -9,14 +9,12 @@ import { Cart } from '../../../module/Cart';
 })
 export class DetailedProductComponent {
   title = 'tourVN';
-  travelData: any;
-  private url: string = 'http://localhost:3000/products';
+  travelData: any = null;
+  url: string = 'http://localhost:3000/products';
   getID: any;
-  detailedProduct: any;
+  detailedProduct: any = null;
   cart: Cart = inject(Cart);
-  constructor(private route: ActivatedRoute, private http: HttpClient) {
-    this.getID = this.route.snapshot.paramMap.get('id');
-  }
+  constructor(private route: ActivatedRoute, private http: HttpClient) {}
   moneyFormat = function (amount: number) {
     let value = `${amount}`;
     let tru = '';
@@ -29,7 +27,7 @@ export class DetailedProductComponent {
       let count = value.length % 3 == 0 ? 3 : value.length % 3 == 1 ? 2 : 1;
       for (let i = 0; i < arr.length - 1; i++) {
         if (count == 3) {
-          arr.splice(i, 0, ' ');
+          arr.splice(i, 0, '.');
           count = 1;
           i++;
         } else {
@@ -44,8 +42,19 @@ export class DetailedProductComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.http.get(`${this.url}?id=${this.getID}`).subscribe((res) => {
-      this.detailedProduct = res;
+    this.route.params.subscribe((id) => {
+      this.getID = id['id'];
+      this.http.get(`${this.url}?id=${this.getID}`).subscribe((data: any) => {
+        this.detailedProduct = data;
+        console.log(data);
+      });
+      // fetch(`${this.url}?id=${this.getID}`)
+      //   .then((res: any) => {
+      //     return res.json();
+      //   })
+      //   .then((data) => {
+      //     this.detailedProduct = data;
+      //   });
     });
   }
   addCart(quantity: any) {

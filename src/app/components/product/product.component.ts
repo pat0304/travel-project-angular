@@ -9,7 +9,7 @@ import { formatNumber } from '../../../module/module';
   styleUrl: './product.component.css',
 })
 export class ProductComponent {
-  travelData: any;
+  travelData: any = null;
   url: string = 'http://localhost:3000/products';
   getRegion: any;
   sortSelected: string = 'no';

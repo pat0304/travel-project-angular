@@ -1,0 +1,301 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "image": [
+        "https://dulichviet.net.vn/wp-content/uploads/2022/12/bau-sen-bau-trang-15.jpg",
+        "https://dulichviet.net.vn/wp-content/uploads/2022/12/Lau_dai_ruou_vang_Mui_Ne.jpg",
+        "https://dulichviet.net.vn/wp-content/uploads/2022/12/thap-ba-posanu.png"
+      ],
+      "name": "TOUR PHAN THIẾT – MŨI NÉ",
+      "price": 840000,
+      "region": "trung"
+    },
+    {
+      "id": "2",
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/du-lich-sapa-nui-ham-rong-1.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/Du-lich-sapa-ban-cat-cat-1.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Sapa/Du-lich-sapa-1.jpg"
+      ],
+      "name": "TOUR SAPA",
+      "price": 1250000,
+      "region": "bac"
+    },
+    {
+      "id": "3",
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/Ho%C3%A0ng-su-ph%C3%AC-5.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/ho%C3%A0ng-su-ph%C3%AC-m%C3%B9a-l%C3%BAa-ch%C3%ADn.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/H%C3%A0%20Giang/du-l%E1%BB%8Bch-ho%C3%A0ng-su-ph%C3%AC.jpg"
+      ],
+      "name": "Du Lịch Hoàng Su Phì - Simacai - Bắc Hà",
+      "price": 3890000,
+      "region": "bac"
+    },
+    {
+      "id": "4",
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/M%E1%BB%99c%20Ch%C3%A2u/Du-lich-m%E1%BB%99c-ch%C3%A2u-6.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/M%E1%BB%99c%20Ch%C3%A2u/C%C3%A2y-%C4%91%C3%A0o-t%C3%B4-hi%E1%BB%87u-s%C6%A1n-la.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/%C4%90i%E1%BB%87n%20Bi%C3%AAn/du-lich-dien-bien-6.jpg"
+      ],
+      "name": "Du Lịch Bắc Ninh",
+      "price": 3320000,
+      "region": "bac"
+    },
+    {
+      "id": "5",
+      "image": [
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-lich-Da-Lat-9.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-lich-Da-Lat-12.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-lich-Da-Lat-10.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-lich-Da-Lat-11.jpg"
+      ],
+      "name": "Du Lịch Đà Lạt - Tour check in",
+      "price": 2590000,
+      "region": "trung"
+    },
+    {
+      "id": "6",
+      "image": [
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-hue-8.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-hue-9.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-hue-10.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-du-lich-hue-11.jpg"
+      ],
+      "name": "Tour Du Lịch Huế",
+      "price": 4590000,
+      "region": "trung"
+    },
+    {
+      "id": "7",
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Mi%E1%BB%81n%20T%C3%A2y/Cho-noi-cai-rang2.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Mi%E1%BB%81n%20T%C3%A2y/Chua-doi.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/M%C5%A9i-c%C3%A0-mau-2.jpg",
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Mi%E1%BB%81n%20T%C3%A2y/Nh%C3%A0-c%C3%B4ng-t%E1%BB%AD-b%E1%BA%A1c-li%C3%AAu.jpg"
+      ],
+      "name": "Du lịch Miền Tây: Cần Thơ - Sóc Trăng - Cà Mau - Bạc Liêu",
+      "price": 1750000,
+      "region": "nam"
+    },
+    {
+      "id": "8",
+      "image": [
+        "https://khamphadulichviet.com.vn/Uploads/28/images/DU%20L%E1%BB%8ACH%20TRONG%20N%C6%AF%E1%BB%9AC/Ph%C3%BA%20Qu%E1%BB%91c/Du-lich-phu-quoc-bai-sao3.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-phu-quoc-2.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-phu-quoc-1.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/lager-phu-quoc-3.jpg"
+      ],
+      "name": "Du Lịch Phú Quốc",
+      "price": 2099000,
+      "region": "nam"
+    },
+    {
+      "id": "9",
+      "image": [
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-l%E1%BB%8Bch-v%C5%A9ng-t%C3%A0u-1.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-l%E1%BB%8Bch-v%C5%A9ng-t%C3%A0u-2.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-l%E1%BB%8Bch-v%C5%A9ng-t%C3%A0u-3.jpg",
+        "https://khamphadulichviet.com.vn/uploads/28/images/Du-l%E1%BB%8Bch-v%C5%A9ng-t%C3%A0u-4.jpg"
+      ],
+      "name": "Du Lịch Vũng Tàu",
+      "price": 2390000,
+      "region": "nam"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "release": "03/04/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-1.jpg",
+      "title": "3 cách giúp bạn du lịch khắp thế giới không tốn một xu",
+      "content": [
+        "<p>Có rất nhiều cách để đi du lịch nước ngoài không tốn một xu mà bạn có thể áp dụng ngay từ bây giờ, thậm chí là bạn còn được… trả tiền cho tất cả các hoạt động của mình. Bạn có sẵn sàng thử không?</p>",
+        "<h2>1. Trở thành một hướng dẫn viên du lịch</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-2.jpg\">",
+        "Trở thành hướng dẫn viên du lịch là một trong những cách giúp bạn dễ dàng tiếp cận với những địa điểm du lịch nổi tiếng trong nước và ngoài nước. Nó có thể giúp bạn biết đến và hiểu thêm rất nhiều nền văn hóa khác nhau mà không tốn một đồng nào. Tuy nhiên, công việc này cũng có những hạn chế nhất định. Thứ nhất, nếu bạn là một hướng dẫn viên du lịch tự do bạn có thể thoải mái hơn trong khi làm việc, nhưng điều đó cũng có nghĩa là lương của bạn sẽ không đều và bạn cũng không được đảm bảo là sẽ có công việc thường xuyên. Thứ hai, nếu bạn đủ may mắn để có một công việc ổn định tại một công ty du lịch, thì bạn phải xử lý hết các công việc hậu cần, lên kế hoạch và cố gắng để quản lý tốt nhóm khách du lịch “cáu kỉnh” cho mỗi tuần tại một thời điểm khác nhau.",
+        "<h2>2. Tham gia WWOOF</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-3.jpg\">",
+        "<p>WWOOF (www.wwoof.net) là tổ chức phi lợi nhuận liên kết các nông trại hữu cơ của rất nhiều nước trên thế giới. Bạn có thể làm việc tình nguyện ở các trang trại này trong một thời gian, để đổi lấy một chỗ ở và các bữa ăn được nấu tại nhà. WWOOF có thể không phải là một sự lựa chọn công việc hoàn hảo, nhưng nó là một cách tuyệt vời để bạn có thể nhìn ngắm thế giới trong khi vẫn “bảo toàn” được số tiền trong thẻ ngân hàng của mình.</p>",
+        "<h2>3. Trở thành giáo viên dạy ngoại ngữ</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-4-1024x766.jpg\">",
+        "<p>Nếu bạn đang tìm kiếm một cuộc phiêu lưu ở nước ngoài và bạn có trình độ Anh ngữ tốt, hãy thử tham gia công việc giảng dạy tiếng Anh hoặc tiếng Việt ở nước ngoài xem sao. Có rất nhiều những trung tâm dạy ngoại ngữ ở các khu vực châu Á, Trung Đông, châu Mỹ Latinh… có nhu cầu tuyển dụng giáo viên giỏi tiếng Anh và tiếng Việt, và hầu hết các nước đó đều không yêu cầu bạn bắt buộc phải nói được ngôn ngữ bản địa. Nếu bạn có ý định đi du lịch bằng cách này, nhớ trang bị cho mình một số chứng chỉ giảng dạy ngoại ngữ được cấp bởi các Tổ chức quốc tế nhé. Và bạn biết đấy, mức lương cho công việc này không hề thấp một chút nào!</p>"
+      ]
+    },
+    {
+      "id": "2",
+      "release": "05/06/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-2.jpg",
+      "title": "10 điểm đến tuyệt vời dành cho những người muốn du lịch không tốn kém",
+      "content": [
+        "<p>Những điểm đến này không chỉ đẹp mắt mà còn không tốn kém. Hãy khám phá và trải nghiệm!</p>",
+        "<h2>1. Bali, Indonesia</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-5.jpg\">",
+        "<p>Đảo Bali là một điểm đến nổi tiếng với các bãi biển đẹp và văn hóa độc đáo của Indonesia.</p>",
+        "<h2>2. Chiang Mai, Thái Lan</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-6.jpg\">",
+        "<p>Thành phố Chiang Mai tại Thái Lan nổi tiếng với văn hóa và ẩm thực đặc sắc.</p>",
+        "<h2>3. Machu Picchu, Peru</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-7.jpg\">",
+        "<p>Thành phố cổ Machu Picchu ở Peru là một trong những kỳ quan thế giới đáng thăm nhất.</p>"
+      ]
+    },
+    {
+      "id": "3",
+      "release": "07/08/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-3.jpg",
+      "title": "Khám phá những điều tuyệt vời với trải nghiệm WWOOF",
+      "content": [
+        "<p>WWOOF là một cơ hội tuyệt vời để khám phá thế giới mà không tốn kém nhiều. Hãy xem những gì bạn có thể làm tại các trang trại hữu cơ!</p>",
+        "<h2>1. Học hỏi về nông nghiệp hữu cơ</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-8.jpg\">",
+        "<p>Tại các trang trại WWOOF, bạn có thể học hỏi về các phương pháp nông nghiệp hữu cơ và thực hành chăm sóc động vật.</p>",
+        "<h2>2. Giao lưu với cộng đồng địa phương</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-9.jpg\">",
+        "<p>Trải nghiệm WWOOF không chỉ giúp bạn học hỏi về nông nghiệp mà còn giúp bạn giao lưu với cộng đồng địa phương.</p>"
+      ]
+    },
+    {
+      "id": "4",
+      "release": "09/10/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-4-1024x766.jpg",
+      "title": "Hướng dẫn tham gia chương trình giảng dạy ngoại ngữ tại nước ngoài",
+      "content": [
+        "<p>Tham gia giảng dạy ngoại ngữ là một cách tuyệt vời để du lịch và kiếm thu nhập. Hãy tìm hiểu cách tham gia chương trình này!</p>",
+        "<h2>1. Chuẩn bị tài liệu</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-10.jpg\">",
+        "<p>Chuẩn bị tài liệu giảng dạy là bước quan trọng để bạn có thể chia sẻ kiến thức và kỹ năng với học viên của mình.</p>",
+        "<h2>2. Tìm kiếm cơ hội</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-11.jpg\">",
+        "<p>Trước khi tham gia giảng dạy ở nước ngoài, hãy tìm kiếm cơ hội và chuẩn bị hồ sơ của bạn.</p>"
+      ]
+    },
+    {
+      "id": "5",
+      "release": "11/12/2024",
+      "image": "https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-5.jpg",
+      "title": "5 điểm đến du lịch không tốn kém ở Châu Á",
+      "content": [
+        "<p>Khám phá những điểm đến đẹp mắt và thú vị ở Châu Á mà bạn có thể khám phá mà không cần phải chi tiêu nhiều!</p>",
+        "<h2>1. Đảo Bali, Indonesia</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-11.jpg\">",
+        "<p>Đảo Bali với bãi biển đẹp và văn hóa độc đáo là một điểm đến không thể bỏ qua ở Châu Á.</p>",
+        "<h2>2. Thành phố Siem Reap, Campuchia</h2>",
+        "<img width='100%' src=\"https://cdn3.ivivu.com/2014/06/Di-du-lich-khong-ton-mot-xu-ivivu-13.jpg\">",
+        "<p>Thành phố Siem Reap nổi tiếng với di sản văn hóa Angkor Wat và là một điểm đến hấp dẫn ở Châu Á.</p>"
+      ]
+    }
+  ],
+  "user": [
+    {
+      "id": "1",
+      "username": "patrick",
+      "phone": "0987654321",
+      "email": "patrick@gmail.com",
+      "firstName": "Tiến",
+      "lastnName": "Phan",
+      "password": "123456"
+    },
+    {
+      "id": "3111",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "123456"
+    },
+    {
+      "id": "2783",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "123456"
+    },
+    {
+      "id": "3c03",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "123456"
+    },
+    {
+      "id": "c6af",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "123456"
+    },
+    {
+      "id": "5af9",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "123456"
+    },
+    {
+      "id": "3a9a",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "123456"
+    },
+    {
+      "id": "1dba",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "123456"
+    },
+    {
+      "id": "3ba9",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "MTIzNDU2"
+    },
+    {
+      "id": "1f05",
+      "username": "admin",
+      "phone": "0984921834",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Phan",
+      "lastName": "Tiến",
+      "password": "MTIzNDU2"
+    },
+    {
+      "id": "4a0f",
+      "username": "hehe",
+      "phone": "0987654321",
+      "email": "anhtienok0304@gmail.com",
+      "firstName": "Day",
+      "lastName": "Patrick",
+      "password": "cGF0cmljazEyMw=="
+    },
+    {
+      "id": "aaa5",
+      "username": "Tien",
+      "phone": "0123456789",
+      "email": "anh@gmail.com",
+      "firstName": "Tiến",
+      "lastName": "Phan",
+      "password": "MTIzNDU2"
+    }
+  ]
+}

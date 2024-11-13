@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-let crypto = require('crypto-js');
+import CryptoJS from 'crypto-js';
+let crypto: any = CryptoJS;
 
 @Component({
   selector: 'app-register',

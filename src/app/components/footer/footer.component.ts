@@ -1,7 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { User } from '../../../module/User';
-let crypto = require('crypto-js');
+import CryptoJS from 'crypto-js';
+let crypto: any = CryptoJS;
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
